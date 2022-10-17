@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/464c35cb08.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <button class="infos"><i class="fa-solid fa-info"></i></button>
+        <h1 id="display">0</h1>
+        <div class="row">
+            <button class="button grey" onclick="restart()">C</button>
+            <button class="button grey" onclick="myDelete()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="button grey">%</button>
+            <button class="button orange" onclick="myOperator('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div class="row">
+            <button class="button black" onclick="myNumber('7')">7</button>
+            <button class="button black" onclick="myNumber('8')">8</button>
+            <button class="button black" onclick="myNumber('9')">9</button>
+            <button class="button orange" onclick="myOperator('*')">x</button>
+        </div>
+        <div class="row">
+            <button class="button black" onclick="myNumber('4')">4</button>
+            <button class="button black" onclick="myNumber('5')">5</button>
+            <button class="button black" onclick="myNumber('6')">6</button>
+            <button class="button orange" onclick="myOperator('-')">-</button>
+        </div>
+        <div class="row">
+            <button class="button black" onclick="myNumber('1')">1</button>
+            <button class="button black" onclick="myNumber('2')">2</button>
+            <button class="button black" onclick="myNumber('3')">3</button>
+            <button class="button orange" onclick="myOperator('+')">+</button>
+        </div>
+        <div class="row">
+            <button class="button-big black" onclick="myNumber('0')">0</button>
+            <button class="button black">.</button>
+            <button class="button orange" onclick="myResult()">=</button>
+        </div>
+    </div>
+</body></html>
+<script type="text/javascript" src="script.js"></script>
