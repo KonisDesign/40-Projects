@@ -16,37 +16,37 @@
             <img src="assets/qrcode.png" alt="qrcode">
         </div>
     </header>
-    <div class="container">
-        <h3>Question 1 / 10</h3>
-        <h1>In the television series "Friends", which character has been in love with Rachel since high school ?</h1>
+    <div class="container" id="questions">
+        <h3 id="question-n">Question 1 / 10</h3>
+        <h1 id="question-q">In the television series "Friends", which character has been in love with Rachel since high school ?</h1>
         <div class="second-container">
             <div class="image-container">
-                <img src="assets/q1.jpeg" alt="question">
+                <img src="assets/q1.jpg" alt="question" id="question-i">
             </div>
             <div class="wrapper">
-                <input type="radio" name="select" id="option-1">
-                <input type="radio" name="select" id="option-2">
-                <input type="radio" name="select" id="option-3">
-                <input type="radio" name="select" id="option-4">
+                <input type="radio" name="select" id="option-1" value="1">
+                <input type="radio" name="select" id="option-2" value="2">
+                <input type="radio" name="select" id="option-3" value="3">
+                <input type="radio" name="select" id="option-4" value="4">
                 <label for="option-1" class="option option-1">
                     <div class="dot"></div>
-                    <span>Gunther</span>
+                    <span id="rep1">Gunther</span>
                 </label>
                 <label for="option-2" class="option option-2">
                     <div class="dot"></div>
-                    <span>Chandler</span>
+                    <span id="rep2">Chandler</span>
                 </label>
                 <label for="option-3" class="option option-3">
                     <div class="dot"></div>
-                    <span>Joey</span>
+                    <span id="rep3">Joey</span>
                 </label>
                 <label for="option-4" class="option option-4">
                     <div class="dot"></div>
-                    <span>Ross</span>
+                    <span id="rep4">Ross</span>
                 </label>
             </div>
         </div>
-        <button class="comfirm-button" id="comfirm-button">Comfirm</button>
+        <button class="comfirm-button" id="comfirm" onclick="nextQ()">Comfirm</button>
     </div>
 </body></html>
 <script type="text/javascript" src="script.js"></script>

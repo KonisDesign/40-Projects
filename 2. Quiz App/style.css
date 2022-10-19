@@ -72,10 +72,13 @@ header .play-phone img {
 }
 
 .container .second-container .image-container {
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
     border: 8px solid #fff;
     border-radius: 10px;
+    background-color: #fff;
     transform: rotate(-5deg);
     transition: transform 0.4s;
 }
@@ -189,7 +192,6 @@ input[type="radio"] {
     font-size: 20px;
     font-family: 'Russo One', sans-serif;
     cursor: pointer;
-    display: none;
 }
 
 .comfirm-button:hover {
