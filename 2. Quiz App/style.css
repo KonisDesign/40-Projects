@@ -220,10 +220,12 @@ input[type="radio"] {
 
 .result-container .result-wrapper {
     width: 300px;
+    justify-content: center;
 }
 
 .result-container .result-wrapper .option {
     height: auto;
+    margin: 5px 0px;
 }
 
 #q1r4,
