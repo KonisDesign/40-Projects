@@ -28,7 +28,7 @@
                 <input type="radio" name="select" id="option-2" value="2">
                 <input type="radio" name="select" id="option-3" value="3">
                 <input type="radio" name="select" id="option-4" value="4">
-                <label for="option-1" class="option option-1">
+                <label for="option-1" class="option option-1" onclick="selectAnswer()">
                     <div class="dot"></div>
                     <span id="rep1">Gunther</span>
                 </label>
@@ -47,6 +47,200 @@
             </div>
         </div>
         <button class="comfirm-button" id="comfirm" onclick="nextQ()">Comfirm</button>
+    </div>
+    <div class="result-container" id="results">
+        <h1 id="result-r">Congrats ! 10 / 10</h1>
+        <div class="wrapper result-wrapper">
+            <h3>In the television series "Friends", which character has been in love with Rachel since high school ?</h3>
+            <label class="option" id="q1r1">
+                <div class="dot"></div>
+                <span>Gunther</span>
+            </label>
+            <label class="option" id="q1r2">
+                <div class="dot"></div>
+                <span>Chandler</span>
+            </label>
+            <label class="option" id="q1r3">
+                <div class="dot"></div>
+                <span>Joey</span>
+            </label>
+            <label class="option" id="q1r4">
+                <div class="dot"></div>
+                <span style="color: #fff;">Ross</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>To which rock group do we owe "We are the champions" ?</h3>
+            <label class="option" id="q2r1">
+                <div class="dot"></div>
+                <span style="color: #fff;">Queen</span>
+            </label>
+            <label class="option" id="q2r2">
+                <div class="dot"></div>
+                <span>ACDC</span>
+            </label>
+            <label class="option" id="q2r3">
+                <div class="dot"></div>
+                <span>The Rolling Stones</span>
+            </label>
+            <label class="option" id="q2r4">
+                <div class="dot"></div>
+                <span>Europe</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>In which state of the United States is the city of Malibu located ?</h3>
+            <label class="option" id="q3r1">
+                <div class="dot"></div>
+                <span>Hawaii</span>
+            </label>
+            <label class="option" id="q3r2">
+                <div class="dot"></div>
+                <span style="color: #fff;">California</span>
+            </label>
+            <label class="option" id="q3r3">
+                <div class="dot"></div>
+                <span>Colorado</span>
+            </label>
+            <label class="option" id="q3r4">
+                <div class="dot"></div>
+                <span>Florida</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>Why is the flamingo pink ?</h3>
+            <label class="option" id="q4r1">
+                <div class="dot"></div>
+                <span>It's a reaction of the sun's rays on its feathers</span>
+            </label>
+            <label class="option" id="q4r2">
+                <div class="dot"></div>
+                <span style="color: #fff;">This is the cause of a diet rich in shrimp</span>
+            </label>
+            <label class="option" id="q4r3">
+                <div class="dot"></div>
+                <span>Because there are only females</span>
+            </label>
+            <label class="option" id="q4r4">
+                <div class="dot"></div>
+                <span>Because flamingos like to be different</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>Which of these animals can't close their eyes ?</h3>
+            <label class="option" id="q5r1">
+                <div class="dot"></div>
+                <span>Mouse</span>
+            </label>
+            <label class="option" id="q5r2">
+                <div class="dot"></div>
+                <span>Parrot</span>
+            </label>
+            <label class="option" id="q5r3">
+                <div class="dot"></div>
+                <span style="color: #fff;">Snake</span>
+            </label>
+            <label class="option" id="q5r4">
+                <div class="dot"></div>
+                <span>Koala</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>What part of the body continues to grow throughout life ?</h3>
+            <label class="option" id="q6r1">
+                <div class="dot"></div>
+                <span>The feet</span>
+            </label>
+            <label class="option" id="q6r2">
+                <div class="dot"></div>
+                <span>The buttocks</span>
+            </label>
+            <label class="option" id="q6r3">
+                <div class="dot"></div>
+                <span>The fingers</span>
+            </label>
+            <label class="option" id="q6r4">
+                <div class="dot"></div>
+                <span style="color: #fff;">The ears</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>Where were the 2018 Olympics held ?</h3>
+            <label class="option" id="q7r1">
+                <div class="dot"></div>
+                <span style="color: #fff;">PyeongChang</span>
+            </label>
+            <label class="option" id="q7r2">
+                <div class="dot"></div>
+                <span>Moscow</span>
+            </label>
+            <label class="option" id="q7r3">
+                <div class="dot"></div>
+                <span>Vancouver</span>
+            </label>
+            <label class="option" id="q7r4">
+                <div class="dot"></div>
+                <span>Torino</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>When does the First World War start ?</h3>
+            <label class="option" id="q8r1">
+                <div class="dot"></div>
+                <span>December 5, 1913</span>
+            </label>
+            <label class="option" id="q8r2">
+                <div class="dot"></div>
+                <span>March 21, 1914</span>
+            </label>
+            <label class="option" id="q8r3">
+                <div class="dot"></div>
+                <span style="color: #fff;">July 28, 1914</span>
+            </label>
+            <label class="option" id="q8r4">
+                <div class="dot"></div>
+                <span>October 10, 1914</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>What alcohol is used in the preparation of a Mojito ?</h3>
+            <label class="option" id="q9r1">
+                <div class="dot"></div>
+                <span style="color: #fff;">Rum</span>
+            </label>
+            <label class="option" id="q9r2">
+                <div class="dot"></div>
+                <span>Vodka</span>
+            </label>
+            <label class="option" id="q9r3">
+                <div class="dot"></div>
+                <span>Cognac</span>
+            </label>
+            <label class="option" id="q9r4">
+                <div class="dot"></div>
+                <span>Gin</span>
+            </label>
+        </div>
+        <div class="wrapper result-wrapper">
+            <h3>How old was Leonardo DiCaprio while filming Titanic ?</h3>
+            <label class="option" id="q10r1">
+                <div class="dot"></div>
+                <span>17</span>
+            </label>
+            <label class="option" id="q10r2">
+                <div class="dot"></div>
+                <span>20</span>
+            </label>
+            <label class="option" id="q10r3">
+                <div class="dot"></div>
+                <span style="color: #fff;">23</span>
+            </label>
+            <label class="option" id="q10r4">
+                <div class="dot"></div>
+                <span>26</span>
+            </label>
+        </div>
+        <button class="comfirm-button" id="restart" onclick="window.location.reload();">Retry</button>
     </div>
 </body></html>
 <script type="text/javascript" src="script.js"></script>

@@ -73,6 +73,8 @@ function nextQ() {
     } else if (q == 11) {
         reponse("3");
         document.getElementById('questions').style.display = "none";
+        document.getElementById('results').style.display = "flex";
+        document.getElementById('result-r').innerHTML = "Great ! " + score + " / 10";
     }
 }
 
@@ -80,6 +82,14 @@ function reponse(answer) {
     let correct = document.querySelector('input[name="select"]:checked').value;
     if (correct == answer) {
         score++;
+    } else {
+        let i = q - 1;
+        document.getElementById('q' + i + 'r' + correct).style.backgroundColor = "#BF0101";
     }
-    console.log(score);
+    document.querySelector('input[name="select"]:checked').checked = false;
+    document.getElementById('comfirm').style.display = "none";
+}
+
+function selectAnswer() {
+    document.getElementById('comfirm').style.display = "block";
 }
