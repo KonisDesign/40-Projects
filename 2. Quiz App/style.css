@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
-html {
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-}
-
+html,
 body {
     width: 100%;
     height: auto;
     min-height: 100%;
     margin: 0;
-    padding-bottom: 20px;
     overflow-x: hidden;
     background-image: url(assets/background.jpg);
     background-size: cover;
@@ -286,6 +280,10 @@ input[type="radio"] {
     #question-q {
         font-size: 30px;
         margin-top: 0px;
+    }
+
+    .container {
+        padding-bottom: 20px;
     }
 
     .container .second-container .image-container {
