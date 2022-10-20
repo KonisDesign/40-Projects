@@ -266,6 +266,12 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 428px) {
+
+    html,
+    body {
+        overflow-y: auto;
+    }
+
     header {
         justify-content: center;
     }
@@ -339,13 +345,5 @@ input[type="radio"] {
 
     #question-q {
         font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-
-    html,
-    body {
-        overflow-y: auto;
     }
 }
