@@ -15,6 +15,8 @@ function blockItems() {
     for (var i = 0; i < items.length; i++) {
         items[i].disabled = true;
     }
+    document.getElementById("score-ai").classList.remove("text-focus-in");
+    document.getElementById("score-p").classList.remove("text-focus-in");
     setTimeout(unblockItems, 1600);
 }
 
@@ -40,16 +42,22 @@ function aiBrain() {
 function points() {
     if (player == "rock" && data[ai] == "paper") {
         scoreai++;
+        document.getElementById("score-ai").classList.add("text-focus-in");
     } else if (player == "rock" && data[ai] == "scissors") {
         scoreplayer++;
+        document.getElementById("score-p").classList.add("text-focus-in");
     } else if (player == "paper" && data[ai] == "rock") {
         scoreplayer++;
+        document.getElementById("score-p").classList.add("text-focus-in");
     } else if (player == "paper" && data[ai] == "scissors") {
         scoreai++;
+        document.getElementById("score-ai").classList.add("text-focus-in");
     } else if (player == "scissors" && data[ai] == "rock") {
         scoreai++;
+        document.getElementById("score-ai").classList.add("text-focus-in");
     } else if (player == "scissors" && data[ai] == "paper") {
         scoreplayer++;
+        document.getElementById("score-p").classList.add("text-focus-in");
     }
     document.getElementById('score-p').innerHTML = scoreplayer;
     document.getElementById('score-ai').innerHTML = scoreai;
