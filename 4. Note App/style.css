@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f3f6fd;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 90%;
+    height: auto;
+    margin: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+header .new-note {
+    width: calc(100% - 120px);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+header .new-note button {
+    margin-left: 20px;
+    border: none;
+    color: #848486;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+header .new-note button:hover {
+    color: #000;
+}
+
+header .notif {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+header .notif button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    background-color: #f3f6fd;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.note-container {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+.note-container h2 {
+    margin-left: 20px;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.note-container .search-note {
+    width: calc(100% - 40px);
+    height: auto;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-container .search-note .filter {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    background-color: #f3f6fd;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.note-container .search-note .tab-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    grid-gap: 20px;
+}
+
+.note-container .search-note .tab-container button {
+    border: none;
+    color: #848486;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.note-container .search-note .tab-container .selected {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.note-container .items-container {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 30px;
+}
+
+.note {
+    max-width: calc(25% - 20px);
+    flex: 1 0 21%;
+    height: 255px;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+    border-bottom: 5px solid #87baf5;
+}
+
+.note .note-head {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note .note-head .cat {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-calendar {
+    color: #87baf5;
+    border: 1px solid #87baf5;
+}
+
+.fa-mug-hot {
+    color: #aa87f5;
+    border: 1px solid #aa87f5;
+}
+
+.fa-thumbtack {
+    color: #8ac3a3;
+    border: 1px solid #8ac3a3;
+}
+
+.blue i,
+.blue {
+    color: #87baf5;
+    border-color: #87baf5
+}
+
+.purple i,
+.purple {
+    color: #aa87f5;
+    border-color: #aa87f5
+}
+
+.green i,
+.green {
+    color: #8ac3a3;
+    border-color: #8ac3a3;
+}
+
+.note .note-head button {
+    border: none;
+    background-color: #fff;
+    font-size: 20px;
+    color: #848486;
+    cursor: pointer;
+}
+
+.note .note-head button i {
+    color: #848486;
+}
+
+.note h3 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+}
+
+.note .para {
+    width: 90%;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #6c757d;
+}
+
+.note .note-footer {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note .note-footer i {
+    margin-right: 5px;
+}
+
+.note .note-footer p {
+    width: auto;
+    color: #000;
+}
