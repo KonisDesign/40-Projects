@@ -10,6 +10,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     width: 90%;
     height: auto;
@@ -62,6 +66,29 @@ header .notif button {
     background-color: #f3f6fd;
     font-size: 18px;
     cursor: pointer;
+}
+
+footer {
+    width: 90%;
+    height: auto;
+    margin: 25px 5%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+footer p {
+    margin-left: 20px;
+    color: #6c757d;
+}
+
+footer a {
+    margin-right: 20px;
+    color: #000;
 }
 
 .note-container {
@@ -165,7 +192,7 @@ header .notif button {
     align-items: center;
 }
 
-.fa-calendar {
+.fa-briefcase {
     color: #87baf5;
     border: 1px solid #87baf5;
 }
@@ -178,6 +205,11 @@ header .notif button {
 .fa-thumbtack {
     color: #8ac3a3;
     border: 1px solid #8ac3a3;
+}
+
+.fa-basketball {
+    color: #f0864a;
+    border: 1px solid #f0864a;
 }
 
 .blue i,
@@ -196,6 +228,12 @@ header .notif button {
 .green {
     color: #8ac3a3;
     border-color: #8ac3a3;
+}
+
+.orange i,
+.orange {
+    color: #f0864a;
+    border-color: #f0864a;
 }
 
 .note .note-head button {
@@ -243,4 +281,218 @@ header .notif button {
 .note .note-footer p {
     width: auto;
     color: #000;
+}
+
+.new-note-container {
+    width: 90%;
+    height: auto;
+    margin: 0px 5% 25px 5%;
+    padding: 20px 0px;
+    display: none;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+}
+
+.new-note-container .create {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-note-container .title {
+    margin: 0px 20px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+}
+
+.new-note-container textarea {
+    height: 170px;
+    margin: 10px 20px;
+    outline: none;
+    border: none;
+    color: #848486;
+    resize: none;
+}
+
+.new-note-container .date {
+    width: 130px;
+    margin: 0px 20px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.wrapper .option {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #000;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2,
+#option-3:checked:checked ~ .option-3,
+#option-4:checked:checked ~ .option-4 {
+    border-color: #000;
+    background: #000;
+}
+
+.wrapper .option i {
+    border: none;
+    font-size: 18px;
+    color: #000;
+}
+
+#option-1:checked:checked ~ .option-1 i,
+#option-2:checked:checked ~ .option-2 i,
+#option-3:checked:checked ~ .option-3 i,
+#option-4:checked:checked ~ .option-4 i {
+    color: #fff;
+}
+
+.new-note-container .buttons-container {
+    width: auto;
+    height: auto;
+    margin: 40px 20px 0px 20px;
+    display: flex;
+    grid-gap: 10px;
+}
+
+.new-note-container button {
+    width: auto;
+    height: auto;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.new-note-container .light {
+    background-color: #fff;
+    color: #000;
+}
+
+.new-note-container .light:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.new-note-container .dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.big-note {
+    margin-right: 20px;
+}
+
+.scale-in-ver-top {
+    -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-out-ver-top {
+    -webkit-animation: scale-out-ver-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: scale-out-ver-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-ver-top {
+    0% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes scale-out-ver-top {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-out-ver-top {
+    0% {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        opacity: 1;
+    }
 }

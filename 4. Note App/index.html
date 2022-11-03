@@ -12,23 +12,70 @@
 <body>
     <header>
         <div class="new-note">
-            <button><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Write a note</button>
+            <button onclick="writeNote()"><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Write a note</button>
         </div>
         <div class="notif">
             <button><i class="fa-regular fa-bell"></i></button>
         </div>
     </header>
+    <div class="new-note-container" id="new">
+        <div class="create">
+            <input class="title" id="my-title" type="text" placeholder="My note" maxlength="16" oninput="newNote()" required>
+            <textarea id="my-para" maxlength="130" placeholder="New project meeting." oninput="newNote()" required></textarea>
+            <input class="date" type="date" id="my-date" value="2023-07-22" onchange="getDate(this.value)" required>
+            <div class="wrapper">
+                <input type="radio" name="select" id="option-1" value="work" onclick="getType()" checked>
+                <input type="radio" name="select" id="option-2" value="personal" onclick="getType()">
+                <input type="radio" name="select" id="option-3" value="sport" onclick="getType()">
+                <input type="radio" name="select" id="option-4" value="other" onclick="getType()">
+                <label for="option-1" class="option option-1">
+                    <span><i class="fa-solid fa-briefcase"></i></span>
+                </label>
+                <label for="option-2" class="option option-2">
+                    <span><i class="fa-solid fa-mug-hot"></i></span>
+                </label>
+                <label for="option-3" class="option option-3">
+                    <span><i class="fa-solid fa-basketball"></i></span>
+                </label>
+                <label for="option-4" class="option option-4">
+                    <span><i class="fa-solid fa-thumbtack"></i></span>
+                </label>
+            </div>
+            <div class="buttons-container">
+                <button class="light" onclick="cancelNote()"><i class="fa-solid fa-xmark"></i> Cancel</button>
+                <button class="dark" onclick="saveNote()"><i class="fa-solid fa-pen-to-square"></i> Save</button>
+            </div>
+        </div>
+        <div class="note big-note blue" id="noteE">
+            <div class="note-head">
+                <i class="fa-solid fa-briefcase cat" id="note-type"></i>
+                <button disabled><i class="fa-solid fa-ellipsis"></i></button>
+            </div>
+            <h3 id="note-title">My note</h3>
+            <p class="para" id="note-para">New project meeting</p>
+            <div class="note-footer">
+                <i class="fa-solid fa-user"></i>
+                <p id="note-date"><i class="fa-solid fa-calendar-days"></i> Jul 22th 2023</p>
+            </div>
+        </div>
+    </div>
     <div class="note-container">
         <h2>My notes</h2>
         <div class="search-note">
             <div class="tab-container">
-                <button class="selected">All</button>
-                <button>Shared notes</button>
-                <button>Favourite notes</button>
+                <button id="all" class="selected" onclick="readData(data, 0)">All</button>
+                <button id="shared" onclick="readData(data, 1)">Shared notes</button>
+                <button id="fav" onclick="readData(data, 2)">Favourite notes</button>
             </div>
             <button class="filter"><i class="fa-solid fa-filter"></i></button>
         </div>
         <div class="items-container" id="items-container"></div>
     </div>
-</body></html>
+    <footer>
+        <p>40 projects</p>
+        <p>Designed by <a href="http://instagram.com/jxli1/">Devos Julien</a></p>
+    </footer>
+</body>
+
+</html>
 <script type="text/javascript" src="script.js"></script>
