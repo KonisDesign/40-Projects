@@ -127,4 +127,6 @@ function saveNote() {
 
     data.push([mytype, mytitle, mypara, "0", "0", mydate.slice(41)]);
     readData(data, 0);
+
+    cancelNote();
 }
