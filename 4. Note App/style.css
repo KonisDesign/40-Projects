@@ -65,6 +65,9 @@ header .notif button {
     color: #000;
     background-color: #f3f6fd;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
