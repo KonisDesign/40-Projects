@@ -15,7 +15,36 @@
             <button onclick="writeNote()"><i class="fa-solid fa-pencil"></i>&nbsp;&nbsp;Write a note</button>
         </div>
         <div class="notif">
-            <button><i class="fa-regular fa-bell"></i></button>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown('notif')"><i class="fa-regular fa-bell"></i></button>
+                <div class="dropdown-content" id="notif">
+                    <div class="notif-content">
+                        <img src="assets/pp1.webp" alt="profile pic">
+                        <div class="infos">
+                            <h4>Steven Spielberg</h4>
+                            <p>Shared an event with you.</p>
+                        </div>
+                        <p class="time">1 hour ago</p>
+                    </div>
+                    <div class="notif-content">
+                        <img src="assets/pp2.webp" alt="profile pic">
+                        <div class="infos">
+                            <h4>Tom Cruise</h4>
+                            <p>Shared an event with you.</p>
+                        </div>
+                        <p class="time">1 hour ago</p>
+                    </div>
+                    <div class="notif-content">
+                        <img src="assets/pp3.webp" alt="profile pic">
+                        <div class="infos">
+                            <h4>Cameron Diaz</h4>
+                            <p>Shared an event with you.</p>
+                        </div>
+                        <p class="time">1 hour ago</p>
+                    </div>
+                    <button class="notif-button" onclick="dropdown('notif')">View all</button>
+                </div>
+            </div>
         </div>
     </header>
     <div class="new-note-container" id="new">
@@ -75,5 +104,7 @@
         <p>40 projects</p>
         <p>Designed by <a href="http://instagram.com/jxli1/">Devos Julien</a></p>
     </footer>
-</body></html>
+</body>
+
+</html>
 <script type="text/javascript" src="script.js"></script>

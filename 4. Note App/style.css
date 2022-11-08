@@ -71,6 +71,89 @@ header .notif button {
     cursor: pointer;
 }
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: auto;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content .notif-content {
+    width: 360px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-content .notif-content img {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.dropdown-content .notif-content .infos {
+    width: auto;
+    height: 60px;
+    max-width: 200px;
+    padding: 10px;
+}
+
+.dropdown-content .notif-content .infos h4 {
+    margin: 5px 0px 0px 0px;
+}
+
+.dropdown-content .notif-content .infos p {
+    width: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdown-content .notif-content .time {
+    margin: 0;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.dropdown-content .notif-button {
+    width: 100%;
+    height: auto;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1c2f;
+    color: #fff;
+}
+
+.dropdown-content .notif-button:hover {
+    background-color: #0f0e17;
+}
+
+
+
+
+
+
+
 footer {
     width: 90%;
     height: auto;
