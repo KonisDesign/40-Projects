@@ -128,10 +128,23 @@ header .notif button {
 .dropdown-content .notif-content .time {
     margin: 0;
     position: absolute;
-    right: 12px;
-    top: 12px;
     color: #6c757d;
     font-size: 12px;
+}
+
+.dropdown-content .notif-content .first {
+    right: 12px;
+    top: 12px;
+}
+
+.dropdown-content .notif-content .second {
+    right: 12px;
+    top: 92px;
+}
+
+.dropdown-content .notif-content .third {
+    right: 12px;
+    top: 172px;
 }
 
 .dropdown-content .notif-button {
@@ -147,11 +160,6 @@ header .notif button {
 .dropdown-content .notif-button:hover {
     background-color: #0f0e17;
 }
-
-
-
-
-
 
 
 footer {
@@ -557,6 +565,12 @@ input[type="radio"] {
     }
 }
 
+@media screen and (max-width: 390px) {
+
+    .dropdown-content .notif-content {
+        width: 280px;
+    }
+}
 
 @-webkit-keyframes scale-in-ver-top {
     0% {
