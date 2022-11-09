@@ -581,6 +581,15 @@ input[type="radio"] {
     .para {
         height: auto;
     }
+
+    .dropdown-content .filter-content {
+        width: 300px;
+    }
+
+    .custom-select select {
+        width: 100px;
+    }
+
 }
 
 @media screen and (max-width: 390px) {
