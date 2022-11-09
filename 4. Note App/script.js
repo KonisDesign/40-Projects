@@ -9,11 +9,11 @@ Date
 */
 
 let data = [
-    ["work", "Work lessons", "Virtual Digital Marketing Course every week on Monday, Wednesday and Saturday.", "1", "0", "Jan 15th 2023"],
-    ["personal", "Birthday", "You can easily share via message, WhatsApp, emails etc. You can also save your notes and edit it later or can easily delete the note.", "0", "1", "Nov 25th 2022"],
-    ["other", "Quick Summary", "Need to write a summary note of the subject you just finished? Note App lets you do in on-the-go!", "1",
+    ["Work", "Work lessons", "Virtual Digital Marketing Course every week on Monday, Wednesday and Saturday.", "1", "0", "Jan 15th 2023"],
+    ["Personal", "Birthday", "You can easily share via message, WhatsApp, emails etc. You can also save your notes and edit it later or can easily delete the note.", "0", "1", "Nov 25th 2022"],
+    ["Other", "Quick Summary", "Need to write a summary note of the subject you just finished? Note App lets you do in on-the-go!", "1",
         "0", "May 17th 2023"],
-    ["sport", "Football", "Quickly note down the address and email address on Note App so that you can access it from anywhere.", "1", "1", "Nov 20th 2022"]
+    ["Hobbies", "Football", "Quickly note down the address and email address on Note App so that you can access it from anywhere.", "1", "1", "Nov 20th 2022"]
 ];
 
 function readData(dataBase, tab) {
@@ -21,6 +21,7 @@ function readData(dataBase, tab) {
     let type = "";
     let color = "";
     let privacy = "";
+    let option = document.getElementById('filter-option');
 
     document.getElementById('all').classList.remove("selected");
     document.getElementById('shared').classList.remove("selected");
@@ -28,13 +29,13 @@ function readData(dataBase, tab) {
 
     for (let n = dataBase.length - 1; n > -1; n--) {
 
-        if (dataBase[n][0] == "work") {
+        if (dataBase[n][0] == "Work") {
             type = "fa-solid fa-briefcase";
             color = "blue";
-        } else if (dataBase[n][0] == "personal") {
+        } else if (dataBase[n][0] == "Personal") {
             type = "fa-solid fa-mug-hot";
             color = "purple";
-        } else if (dataBase[n][0] == "sport") {
+        } else if (dataBase[n][0] == "Hobbies") {
             type = "fa-solid fa-basketball";
             color = "orange";
         } else {
@@ -48,19 +49,33 @@ function readData(dataBase, tab) {
             privacy = "fa-solid fa-users";
         }
 
-        if (tab == 0) {
-            item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
-            document.getElementById('all').classList.add("selected");
-        } else if (tab == 1 && dataBase[n][3] == "1") {
-            item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
-            document.getElementById('shared').classList.add("selected");
-        } else if (tab == 2 && dataBase[n][4] == "1") {
-            item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
-            document.getElementById('fav').classList.add("selected");
+        if (option.value == 0) {
+            if (tab == 0) {
+                document.getElementById('all').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            } else if (tab == 1 && dataBase[n][3] == "1") {
+                document.getElementById('shared').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            } else if (tab == 2 && dataBase[n][4] == "1") {
+                document.getElementById('fav').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            }
+        } else {
+            if (tab == 0 && dataBase[n][0] == option.options[option.selectedIndex].text) {
+                document.getElementById('all').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            } else if (tab == 1 && dataBase[n][3] == "1" && dataBase[n][0] == option.options[option.selectedIndex].text) {
+                document.getElementById('shared').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            } else if (tab == 2 && dataBase[n][4] == "1" && dataBase[n][0] == option.options[option.selectedIndex].text) {
+                document.getElementById('fav').classList.add("selected");
+                item += '<div class="note ' + color + '" id="note' + n + '"><div class="note-head"><i class="' + type + ' cat"></i><button><i class="fa-solid fa-ellipsis"></i></button></div><h3>' + dataBase[n][1] + '</h3><p class="para">' + dataBase[n][2] + '</p><div class="note-footer"><i class="' + privacy + '"></i><p><i class="fa-solid fa-calendar-days"></i> ' + dataBase[n][5] + '</p></div></div>';
+            }
         }
     }
 
     document.getElementById('items-container').innerHTML = item;
+    document.getElementById('filter').style.display = "none";
 }
 
 readData(data, 0);
@@ -104,13 +119,13 @@ function getDate(date) {
 
 function getType() {
     let mytype = document.querySelector('input[name="select"]:checked').value;
-    if (mytype == "work") {
+    if (mytype == "Work") {
         document.getElementById('note-type').className = 'fa-solid fa-briefcase cat';
         document.getElementById('noteE').className = 'note big-note blue';
-    } else if (mytype == "personal") {
+    } else if (mytype == "Personal") {
         document.getElementById('note-type').className = 'fa-solid fa-mug-hot cat';
         document.getElementById('noteE').className = 'note big-note purple';
-    } else if (mytype == "sport") {
+    } else if (mytype == "Hobbies") {
         document.getElementById('note-type').className = 'fa-solid fa-basketball cat';
         document.getElementById('noteE').className = 'note big-note orange';
     } else {

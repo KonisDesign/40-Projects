@@ -53,10 +53,10 @@
             <textarea id="my-para" maxlength="130" placeholder="New project meeting." oninput="newNote()" required></textarea>
             <input class="date" type="date" id="my-date" value="2023-07-22" onchange="getDate(this.value)" required>
             <div class="wrapper">
-                <input type="radio" name="select" id="option-1" value="work" onclick="getType()" checked>
-                <input type="radio" name="select" id="option-2" value="personal" onclick="getType()">
-                <input type="radio" name="select" id="option-3" value="sport" onclick="getType()">
-                <input type="radio" name="select" id="option-4" value="other" onclick="getType()">
+                <input type="radio" name="select" id="option-1" value="Work" onclick="getType()" checked>
+                <input type="radio" name="select" id="option-2" value="Personal" onclick="getType()">
+                <input type="radio" name="select" id="option-3" value="Hobbies" onclick="getType()">
+                <input type="radio" name="select" id="option-4" value="Other" onclick="getType()">
                 <label for="option-1" class="option option-1">
                     <span><i class="fa-solid fa-briefcase"></i></span>
                 </label>
@@ -96,7 +96,24 @@
                 <button id="shared" onclick="readData(data, 1)"><i class="fa-regular fa-share-from-square"></i> Shared notes</button>
                 <button id="fav" onclick="readData(data, 2)"><i class="fa-regular fa-heart"></i> Favourite notes</button>
             </div>
-            <button class="filter"><i class="fa-solid fa-filter"></i></button>
+            <div class="dropdown">
+                <button class="filter" onclick="dropdown('filter')"><i class="fa-solid fa-filter"></i></button>
+                <div class="dropdown-content" id="filter">
+                    <div class="filter-content">
+                        <i class="fa-regular fa-folder"></i>
+                        <p>Type</p>
+                        <div class="custom-select">
+                            <select id="filter-option" onchange="readData(data, 0)">
+                                <option value="0">All</option>
+                                <option value="1">Work</option>
+                                <option value="2">Personal</option>
+                                <option value="3">Hobbies</option>
+                                <option value="4">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="items-container" id="items-container"></div>
     </div>
@@ -104,7 +121,5 @@
         <p>40 projects</p>
         <p>Designed by <a href="http://instagram.com/jxli1/">Devos Julien</a></p>
     </footer>
-</body>
-
-</html>
+</body></html>
 <script type="text/javascript" src="script.js"></script>
