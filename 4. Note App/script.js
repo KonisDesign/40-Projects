@@ -150,6 +150,8 @@ function dropdown(menu) {
     if (document.getElementById(menu).style.display == "block") {
         document.getElementById(menu).style.display = "none";
     } else {
+        document.getElementById('notif').style.display = "none";
+        document.getElementById('filter').style.display = "none";
         document.getElementById(menu).style.display = "block";
     }
 }
