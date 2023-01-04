@@ -11,9 +11,9 @@ body {
 }
 
 .container {
-    background-color: #ffffff;
     width: 40%;
     min-width: 500px;
+    background-color: #ffffff;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -24,7 +24,6 @@ body {
 }
 
 .timerDisplay {
-    position: relative;
     width: 92%;
     background: #ffffff;
     left: 4%;
@@ -35,6 +34,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
     border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
 }
@@ -65,4 +65,47 @@ body {
 
 .buttons button:nth-last-child(1) {
     background-color: #20b380;
+}
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        width: 90%;
+        min-width: 90%;
+    }
+
+    .timerDisplay {
+        font-size: 30px;
+        padding: 25px 0px;
+    }
+
+    .buttons {
+        margin: 20px auto 0 auto;
+    }
+
+    .buttons button {
+        width: 95px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+        padding-bottom: 20px;
+    }
+
+    .timerDisplay {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .timerDisplay {
+        font-size: 20px;
+    }
+
+    .buttons button {
+        width: 80px;
+    }
 }
