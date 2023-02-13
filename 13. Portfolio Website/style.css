@@ -20,6 +20,10 @@ h1 {
   font-size: 45px;
 }
 
+h2 {
+  color: #fff;
+}
+
 main {
   width: 300px;
   height: 100%;
@@ -70,7 +74,7 @@ main .items .active:hover {
   color: #fff;
 }
 
-.home-container {
+.container {
   width: calc(100% - 300px);
   height: 100%;
   min-height: 100vh;
@@ -80,17 +84,17 @@ main .items .active:hover {
   align-items: center;
   justify-content: center;
 }
-.home-container p {
+.container p {
   width: 70%;
   height: auto;
   margin: 0;
   text-align: center;
   font-size: 18px;
 }
-.home-container span {
+.container span {
   color: #0d6efd;
 }
-.home-container .social-container {
+.container .social-container {
   width: auto;
   height: auto;
   margin-top: 30px;
@@ -98,7 +102,7 @@ main .items .active:hover {
   align-items: center;
   gap: 15px;
 }
-.home-container .social-container a {
+.container .social-container a {
   width: 48px;
   height: 48px;
   border: 2px solid #2a2f47;
@@ -109,9 +113,57 @@ main .items .active:hover {
   font-size: 21px;
   color: #a4acc4;
 }
-.home-container .social-container a:hover {
+.container .social-container a:hover {
   color: #0d6efd;
   border-color: #0d6efd;
+}
+.container .infos-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.container .infos-container img {
+  width: 40%;
+  height: 350px;
+  object-fit: cover;
+}
+.container .infos-container .infos {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .infos-container .infos p {
+  width: 100%;
+  text-align: left;
+}
+.container .infos-container .infos .list {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.container .infos-container .infos .list .item {
+  width: 50%;
+  height: auto;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .infos-container .infos button {
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+#about h1 {
+  width: 90%;
+  text-align: left;
 }
 
 .lines {
