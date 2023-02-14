@@ -168,12 +168,12 @@ main .items .active:hover {
   gap: 15px;
 }
 .container .infos-container img {
-  width: 40%;
+  width: 35%;
   height: 350px;
   object-fit: cover;
 }
 .container .infos-container .infos {
-  width: 60%;
+  width: 65%;
   height: auto;
   display: flex;
   flex-direction: column;
