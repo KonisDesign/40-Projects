@@ -233,6 +233,7 @@ main .items .active:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: none;
 }
 .container .stack-list .ccode {
   background-color: #00599c;
@@ -245,6 +246,9 @@ main .items .active:hover {
 }
 .container .stack-list .javascript {
   background-color: #323330;
+}
+.container .stack-list .javascript i {
+  color: #f7df1e;
 }
 .container .stack-list .php {
   background-color: #777BB4;
@@ -276,13 +280,49 @@ main .items .active:hover {
 .container .last {
   margin-bottom: 40px;
 }
+.container .project-container {
+  width: 90%;
+  height: auto;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+.container .project-container .card {
+  width: 450px;
+  height: auto;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #191d2b;
+}
+.container .project-container .card img {
+  width: 100%;
+  height: auto;
+}
+.container .project-container .card .stack-list a {
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.container .project-container .card .stack-list .primary {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  background-color: transparent;
+}
+.container .project-container .card .stack-list .secondary {
+  color: #fff;
+  background-color: #0d6efd;
+}
 
-#about h1, #resume h1 {
+#about h1, #resume h1, #projects h1 {
   width: 90%;
   text-align: left;
 }
 
-#about, #resume {
+#about, #resume, #projects {
   display: none;
 }
 

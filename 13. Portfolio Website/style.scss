@@ -271,6 +271,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            cursor: none;
         }
 
         .ccode {
@@ -287,6 +288,9 @@ main {
 
         .javascript {
             background-color: #323330;
+            i {
+                color: #f7df1e;
+            }
         }
 
         .php {
@@ -331,15 +335,57 @@ main {
         margin-bottom: 40px;
     }
 
+    .project-container {
+        width: 90%;
+        height: auto;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18px;
+
+        .card {
+            width: 450px;
+            height: auto;
+            padding: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $maincolor;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .stack-list {
+                a {
+                    margin-top: 10px;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                }
     
+                .primary {
+                    border: 2px solid $hightcolor;
+                    color: $hightcolor;
+                    background-color: transparent;
+                }
+    
+                .secondary {
+                    color: #fff;
+                    background-color: $hightcolor;
+                }
+            }
+        }
+    }
 }
 
-#about h1, #resume h1 {
+#about h1, #resume h1, #projects h1 {
     width: 90%;
     text-align: left;
 }
 
-#about, #resume {
+#about, #resume, #projects {
     display: none;
   }
 
