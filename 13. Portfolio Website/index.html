@@ -16,7 +16,8 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-    <main>
+    <button id="burger" onclick="mainshow('mymain')"><i class="fa-solid fa-bars"></i></button>
+    <main class="slide-right" id="mymain">
         <img src="assets/image.jpeg" alt="image.jpg">
         <div class="items">
             <button class="active" id="homebutton" onclick="show('home', 'homebutton')">HOME</button>
@@ -28,7 +29,7 @@
             <p>&copy; 2023 Devos Julien</p>
         </footer>
     </main>
-    <div class="container" id="home">
+    <div class="container fade-in-fwd" id="home">
         <h1>Hi, I am <span>Julien Devos</span></h1>
         <p>I am a fullstack developer. I have been practicing programming since I was young. Today with my personal
             skills and my studies I was able to develop several website designs or in their entirety.</p>
@@ -37,7 +38,7 @@
             <a href="https://www.linkedin.com/in/julien-devos-4a5422191/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </div>
-    <div class="container" id="about">
+    <div class="container fade-in-fwd" id="about">
         <h1>ABOUT ME</h1>
         <div class="infos-container">
             <img src="assets/infos.jpg" alt="infos.jpg">
@@ -68,11 +69,11 @@
                         <p>: Available</p>
                     </div>
                 </div>
-                <button>DOWNLOAD CV</button>
+                <a href="#">DOWNLOAD CV</a>
             </div>
         </div>
     </div>
-    <div class="container" id="resume">
+    <div class="container fade-in-fwd" id="resume">
         <h1>MY SKILLS</h1>
         <div class="row">
             <div class="item">
@@ -80,7 +81,7 @@
                 <div class="status">
                     <p>95%</p>
                     <div class="progress">
-                        <div class="size size95"></div>
+                        <div class="size size95 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -89,7 +90,7 @@
                 <div class="status">
                     <p>95%</p>
                     <div class="progress">
-                        <div class="size size95"></div>
+                        <div class="size size95 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -101,7 +102,7 @@
                 <div class="status">
                     <p>80%</p>
                     <div class="progress">
-                        <div class="size size80"></div>
+                        <div class="size size80 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -110,7 +111,7 @@
                 <div class="status">
                     <p>90%</p>
                     <div class="progress">
-                        <div class="size size90"></div>
+                        <div class="size size90 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -122,7 +123,7 @@
                 <div class="status">
                     <p>85%</p>
                     <div class="progress">
-                        <div class="size size85"></div>
+                        <div class="size size85 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -131,7 +132,7 @@
                 <div class="status">
                     <p>85%</p>
                     <div class="progress">
-                        <div class="size size85"></div>
+                        <div class="size size85 scale-up-hor-left"></div>
                     </div>
                 </div>
             </div>
@@ -154,7 +155,7 @@
             <p class="stack aftereffects"><i class="fa-solid fa-video"></i>ADOBE AFTER EFFECTS</p>
         </div>
     </div>
-    <div class="container" id="projects">
+    <div class="container fade-in-fwd" id="projects">
         <h1>PROJECTS</h1>
         <div class="project-container">
             <div class="card">

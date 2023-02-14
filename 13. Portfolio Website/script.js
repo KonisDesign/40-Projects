@@ -11,4 +11,17 @@ function show(id, button) {
 
     document.getElementById(id).style.display = "flex";
     document.getElementById(button).classList.add("active");
+
+    if (window.innerWidth <= 834) {
+        document.getElementById('mymain').style.display = "none";
+    }
+}
+
+function mainshow(id) {
+    id = document.getElementById('mymain');
+    if (id.style.display == "flex") {
+        id.style.display = "none";
+    } else {
+        id.style.display = "flex";
+    }
 }

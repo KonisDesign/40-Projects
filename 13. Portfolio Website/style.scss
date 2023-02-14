@@ -31,6 +31,18 @@ h2 {
     color: #fff;
 }
 
+#burger {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 28px;
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
 main {
     width: $mainwidth;
     height: 100%;
@@ -68,12 +80,43 @@ main {
             color: $secondcolor;
             cursor: pointer;
             font-size: 18px;
-        }
+            display: inline-block;
+            transition: all .3s;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
 
-        button:hover {
-            color: $hightcolor;
-            background-color: rgba(13, 110, 253, 0.3);
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 10px 0px;
+                background-color: transparent;
+                z-index: -2;
+            }
 
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                background-color: rgba(13, 110, 253, 0.3);
+                transition: all .3s;
+                z-index: -1;
+            }
+
+            &:hover {
+                color: #fff;
+
+                &:before {
+                    width: 100%;
+                }
+            }
         }
 
         .active {
@@ -178,11 +221,12 @@ main {
                 }
             }
 
-            button {
+            a {
                 padding: 10px;
                 border: none;
                 color: #fff;
                 background-color: $hightcolor;
+                text-decoration: none;
             }
         }
     }
@@ -271,7 +315,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            cursor: none;
+            cursor: default;
         }
 
         .ccode {
@@ -288,6 +332,7 @@ main {
 
         .javascript {
             background-color: #323330;
+
             i {
                 color: #f7df1e;
             }
@@ -328,7 +373,7 @@ main {
         .aftereffects {
             background-color: #9999ff;
         }
-        
+
     }
 
     .last {
@@ -361,16 +406,16 @@ main {
             .stack-list {
                 a {
                     margin-top: 10px;
+                    border: 2px solid $hightcolor;
                     text-decoration: none;
                     padding: 10px 15px;
                 }
-    
+
                 .primary {
-                    border: 2px solid $hightcolor;
                     color: $hightcolor;
                     background-color: transparent;
                 }
-    
+
                 .secondary {
                     color: #fff;
                     background-color: $hightcolor;
@@ -380,14 +425,139 @@ main {
     }
 }
 
-#about h1, #resume h1, #projects h1 {
+#about h1,
+#resume h1,
+#projects h1 {
     width: 90%;
     text-align: left;
 }
 
-#about, #resume, #projects {
+#about,
+#resume,
+#projects {
     display: none;
-  }
+}
+
+@media all and (max-width: 834px) {
+    #burger {
+        display: block;
+    }
+
+    main {
+        display: none;
+        z-index: 1;
+    }
+
+    .container {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 30px;
+
+
+        .infos-container {
+
+            .infos {
+                .list {
+                    .item {
+                        width: 70%;
+                        min-width: 70%;
+                        justify-content: space-between;
+
+                        p {
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .project-container {
+            gap: 0px;
+            justify-content: space-between;
+
+            .card {
+                width: 45%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 428px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    .container {
+        padding-bottom: 30px;
+
+        p {
+            width: 95%;
+        }
+
+        .infos-container {
+            flex-direction: column;
+
+            img {
+                width: 90%;
+            }
+
+            .infos {
+                width: 90%;
+
+                .list {
+                    .item {
+                        width: 100%;
+                        min-width: 100%;
+                    }
+                }
+
+                p {
+                    text-align: justify;
+                }
+            }
+        }
+
+        .project-container {
+            gap: 0px;
+
+            .card {
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 375px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    .container {
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    main {
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
 
 .lines {
     width: calc(100% - $mainwidth);
@@ -440,6 +610,21 @@ main {
     }
 }
 
+.fade-in-fwd {
+    -webkit-animation: fade-in-fwd .6s cubic-bezier(.39, .575, .565, 1.000) both;
+    animation: fade-in-fwd .6s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
+.scale-up-hor-left {
+    -webkit-animation: scale-up-hor-left .4s cubic-bezier(.39, .575, .565, 1.000) 0.5s both;
+    animation: scale-up-hor-left .4s cubic-bezier(.39, .575, .565, 1.000) 0.5s both
+}
+
+.slide-right {
+    -webkit-animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both;
+    animation: slide-right .5s cubic-bezier(.25, .46, .45, .94) both
+}
+
 @keyframes drop {
     0% {
         top: -50%;
@@ -447,5 +632,89 @@ main {
 
     100% {
         top: 110%;
+    }
+}
+
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1
+    }
+}
+
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(.4);
+        transform: scaleX(.4);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0
+    }
+}
+
+@keyframes scale-up-hor-left {
+    0% {
+        -webkit-transform: scaleX(.4);
+        transform: scaleX(.4);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0
+    }
+}
+
+@-webkit-keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-100px);
+        transform: translateX(-100px)
+    }
+
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px)
     }
 }
