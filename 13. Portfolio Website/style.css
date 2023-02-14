@@ -290,7 +290,7 @@ main .items .active:hover {
   gap: 18px;
 }
 .container .project-container .card {
-  width: 450px;
+  width: 440px;
   height: auto;
   padding: 14px;
   display: flex;
