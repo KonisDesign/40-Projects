@@ -186,12 +186,162 @@ main {
             }
         }
     }
+
+    .row {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .item {
+            width: 45%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            h3 {
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .status {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                p {
+                    width: auto;
+                }
+
+                .progress {
+                    width: 90%;
+                    height: 5px;
+                    display: flex;
+                    justify-content: flex-start;
+                    background-color: rgba(13, 110, 253, 0.3);
+
+                    .size {
+                        height: 100%;
+                        background-color: $hightcolor;
+                    }
+
+                    .size80 {
+                        width: 80%;
+                    }
+
+                    .size85 {
+                        width: 85%;
+                    }
+
+                    .size90 {
+                        width: 90%;
+                    }
+
+                    .size95 {
+                        width: 95%;
+                    }
+                }
+            }
+        }
+    }
+
+    .stack-list {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        i {
+            margin-right: 14px;
+        }
+
+        .stack {
+            width: auto;
+            height: 35px;
+            padding: 0px 12px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ccode {
+            background-color: #00599c;
+        }
+
+        .css3 {
+            background-color: #1572B6;
+        }
+
+        .html5 {
+            background-color: #e34f26;
+        }
+
+        .javascript {
+            background-color: #323330;
+        }
+
+        .php {
+            background-color: #777BB4;
+        }
+
+        .sass {
+            background-color: #ff69b4;
+        }
+
+        .nodejs {
+            background-color: #6da55f;
+        }
+
+        .mysql {
+            background-color: #0000ff;
+        }
+
+        .mongodb {
+            background-color: #4ea94b;
+        }
+
+        .canva {
+            background-color: #00c4cc;
+        }
+
+        .photoshop {
+            background-color: #31a8ff;
+        }
+
+        .illustrator {
+            background-color: #ff9a00;
+        }
+
+        .aftereffects {
+            background-color: #9999ff;
+        }
+        
+    }
+
+    .last {
+        margin-bottom: 40px;
+    }
+
+    
 }
 
-#about h1 {
+#about h1, #resume h1 {
     width: 90%;
     text-align: left;
 }
+
+#about, #resume {
+    display: none;
+  }
 
 .lines {
     width: calc(100% - $mainwidth);

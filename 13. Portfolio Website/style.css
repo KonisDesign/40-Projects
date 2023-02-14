@@ -161,13 +161,128 @@ main .items .active:hover {
   color: #fff;
   background-color: #0d6efd;
 }
+.container .row {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .row .item {
+  width: 45%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container .row .item h3 {
+  color: #fff;
+  font-weight: 500;
+}
+.container .row .item .status {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .row .item .status p {
+  width: auto;
+}
+.container .row .item .status .progress {
+  width: 90%;
+  height: 5px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgba(13, 110, 253, 0.3);
+}
+.container .row .item .status .progress .size {
+  height: 100%;
+  background-color: #0d6efd;
+}
+.container .row .item .status .progress .size80 {
+  width: 80%;
+}
+.container .row .item .status .progress .size85 {
+  width: 85%;
+}
+.container .row .item .status .progress .size90 {
+  width: 90%;
+}
+.container .row .item .status .progress .size95 {
+  width: 95%;
+}
+.container .stack-list {
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .stack-list i {
+  margin-right: 14px;
+}
+.container .stack-list .stack {
+  width: auto;
+  height: 35px;
+  padding: 0px 12px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .stack-list .ccode {
+  background-color: #00599c;
+}
+.container .stack-list .css3 {
+  background-color: #1572B6;
+}
+.container .stack-list .html5 {
+  background-color: #e34f26;
+}
+.container .stack-list .javascript {
+  background-color: #323330;
+}
+.container .stack-list .php {
+  background-color: #777BB4;
+}
+.container .stack-list .sass {
+  background-color: #ff69b4;
+}
+.container .stack-list .nodejs {
+  background-color: #6da55f;
+}
+.container .stack-list .mysql {
+  background-color: #0000ff;
+}
+.container .stack-list .mongodb {
+  background-color: #4ea94b;
+}
+.container .stack-list .canva {
+  background-color: #00c4cc;
+}
+.container .stack-list .photoshop {
+  background-color: #31a8ff;
+}
+.container .stack-list .illustrator {
+  background-color: #ff9a00;
+}
+.container .stack-list .aftereffects {
+  background-color: #9999ff;
+}
+.container .last {
+  margin-bottom: 40px;
+}
 
-#about h1 {
+#about h1, #resume h1 {
   width: 90%;
   text-align: left;
 }
 
-#about {
+#about, #resume {
   display: none;
 }
 
