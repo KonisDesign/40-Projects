@@ -19,8 +19,8 @@
     <main>
         <img src="assets/image.jpeg" alt="image.jpg">
         <div class="items">
-            <button class="active">HOME</button>
-            <button>ABOUT</button>
+            <button class="active" id="homebutton" onclick="show('home', 'homebutton')">HOME</button>
+            <button id="aboutbutton" onclick="show('about', 'aboutbutton')">ABOUT</button>
             <button>RESUME</button>
             <button>PROJECTS</button>
         </div>
@@ -28,7 +28,7 @@
             <p>&copy; 2023 Devos Julien</p>
         </footer>
     </main>
-    <div class="container" id="home" style="display: none;">
+    <div class="container" id="home">
         <h1>Hi, I am <span>Julien Devos</span></h1>
         <p>I am a fullstack developer. I have been practicing programming since I was young. Today with my personal
             skills and my studies I was able to develop several website designs or in their entirety.</p>
@@ -69,3 +69,5 @@
 </body>
 
 </html>
+
+<script type="text/javascript" src="script.js"></script>

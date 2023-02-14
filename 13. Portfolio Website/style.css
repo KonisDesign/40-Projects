@@ -122,6 +122,7 @@ main .items .active:hover {
   height: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 15px;
 }
 .container .infos-container img {
@@ -164,6 +165,10 @@ main .items .active:hover {
 #about h1 {
   width: 90%;
   text-align: left;
+}
+
+#about {
+  display: none;
 }
 
 .lines {
