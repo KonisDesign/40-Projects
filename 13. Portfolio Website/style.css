@@ -30,7 +30,7 @@ h2 {
   color: #fff;
   font-size: 28px;
   display: none;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   z-index: 2;
