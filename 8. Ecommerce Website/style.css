@@ -248,4 +248,90 @@ footer .links-container .row-container .social-container {
   gap: 17px;
 }
 
+.title-container {
+  width: 70%;
+  height: auto;
+  padding: 50px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f5f7;
+}
+.title-container .path {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.title-container .path p {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.sort-container {
+  width: 70%;
+  height: auto;
+  margin: 80px 15% 0px 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sort-container .row-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+.sort-container .row-container button {
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.products-container {
+  width: 70%;
+  height: auto;
+  margin: 0px 15%;
+  padding: 10px 0px 100px 0px;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.products-container .item {
+  width: 270px;
+  height: 270px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f5f7;
+  position: relative;
+  cursor: pointer;
+}
+.products-container .item img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+.products-container .item p {
+  width: auto;
+  height: auto;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #f14705;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

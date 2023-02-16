@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>AEKI</title>
+    <title>AEKI - shop</title>
 </head>
-
 <body>
     <header>
         <div class="search-container">
@@ -23,63 +21,47 @@
             <button><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
-    <div class="home-container">
-        <div class="item big">
-            <h2>Smedstorp</h2>
-            <h3>Sofa collection</h3>
-            <img src="assets/sofa/smedstorp-1.png" alt="product">
-        </div>
-        <div class="column">
-            <div class="item small">
-                <h2>Ekerö</h2>
-                <h3>Single sofa collection</h3>
-                <img src="assets/single-sofa/ekero-1.png" alt="product">
-            </div>
-            <div class="item small">
-                <h2>Karlpetter</h2>
-                <h3>Chair collection</h3>
-                <img src="assets/chair/karlpetter-1.png" alt="product">
-            </div>
+    <div class="title-container">
+        <h1>Shop</h1>
+        <div class="path">
+            <a href="./">HOME</a>
+            <p>/</p>
+            <p>SHOP</p>
         </div>
     </div>
-    <div class="home-container">
-        <div class="item square">
-            <h2>Lauters</h2>
-            <h3>Lamp collection</h3>
-            <img src="assets/lamp/lauters-1.png" alt="product">
+    <div class="sort-container">
+        <div class="row-container">
+            <p>Showing 21 results</p>
+            <p>|</p>
+            <button>Sort by <i class="fa-solid fa-chevron-down"></i></button>
         </div>
-        <div class="item long">
-            <h2>Ekedalen</h2>
-            <h3>Table collection</h3>
-            <img src="assets/table/ekedalen-1.png" alt="product">
+        <div class="row-container">
+            <button>Filter <i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
-    <div class="home-container">
-        <div class="item big-square">
-            <h2>Handskalad</h2>
-            <h3>Decoration collection</h3>
+    <div class="products-container">
+        <div class="item" id="item-0" onclick="location.href='product.html';">
+            <img src="assets/chair/karlpetter-1.png" alt="product">
+        </div>
+        <div class="item" id="item-1">
             <img src="assets/decoration/handskalad-1.png" alt="product">
+            <p>-15%</p>
         </div>
-        <div class="item big-square">
-            <h2>Sanela</h2>
-            <h3>Household linen collection</h3>
+        <div class="item" id="item-2">
             <img src="assets/household-linen/sanela-1.png" alt="product">
         </div>
-    </div>
-    <div class="home-container">
-        <div class="item full">
-            <h2>Stockholm</h2>
-            <h3>TV stand collection</h3>
-            <img src="assets/tv-stand/stockholm-1.png" alt="product">
+        <div class="item" id="item-3">
+            <img src="assets/lamp/lauters-1.png" alt="product">
         </div>
-    </div>
-    <div class="newsletter-container">
-        <h1>Our Newsletter</h1>
-        <p>Subscribe our newsletter and get discount 50% off</p>
-        <div class="input-container">
-            <input type="text" placeholder="Your name">
-            <input type="email" placeholder="Your email address">
-            <button><i class="fa-solid fa-arrow-right"></i></button>
+        <div class="item" id="item-4">
+            <img src="assets/single-sofa/ekero-1.png" alt="product">
+        </div>
+        <div class="item" id="item-5">
+            <img src="assets/sofa/smedstorp-1.png" alt="product">
+            <p>-60%</p>
+        </div>
+        <div class="item" id="item-6">
+            <img src="assets/table/ekedalen-1.png" alt="product">
         </div>
     </div>
     <footer>
@@ -140,6 +122,4 @@
         <a href="#">&copy; 2023 AEKI. Devos Julien</a>
     </footer>
 </body>
-
 </html>
-<script type="text/javascript" src="script.js"></script>

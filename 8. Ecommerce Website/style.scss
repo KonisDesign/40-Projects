@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+$greycolor : #f3f5f7;
+
 html, body {
     width: 100%;
     height: auto;
@@ -79,7 +81,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #f3f5f7;
+        background-color: $greycolor;
         position: relative;
         cursor: pointer;
 
@@ -164,7 +166,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #f3f5f7;
+    background-color: $greycolor;
 
     h1 {
         margin: 0;
@@ -280,6 +282,99 @@ footer {
                 justify-content: flex-start;
                 gap: 17px;
             }
+        }
+    }
+}
+
+.title-container {
+    width: 70%;
+    height: auto;
+    padding: 50px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $greycolor;
+
+    .path {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p {
+            color: rgba($color: #000000, $alpha: 0.25);
+        }
+    }
+}
+
+.sort-container {
+    width: 70%;
+    height: auto;
+    margin: 80px 15% 0px 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .row-container {
+        width: auto;
+        height: auto;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-weight: 300;
+
+        button {
+            width: auto;
+            height: auto;
+            border: none;
+            background-color: transparent;
+            font-size: 18px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+}
+
+.products-container {
+    width: 70%;
+    height: auto;
+    margin: 0px 15%;
+    padding: 10px 0px 100px 0px;
+    border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0.25);
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .item {
+        width: 270px;
+        height: 270px;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $greycolor;
+        position: relative;
+        cursor: pointer;
+
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        p {
+            width: auto;
+            height: auto;
+            padding: 8px 16px;
+            color: #fff;
+            background-color: #f14705;
+            position: absolute;
+            top: 0px;
+            right: 20px;
         }
     }
 }
