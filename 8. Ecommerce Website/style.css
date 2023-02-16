@@ -307,8 +307,9 @@ footer .links-container .row-container .social-container {
   gap: 15px;
 }
 .products-container .item {
-  width: 270px;
-  height: 270px;
+  width: auto;
+  flex: 1 0 25%;
+  aspect-ratio: 1/1;
   padding: 30px;
   display: flex;
   justify-content: center;
