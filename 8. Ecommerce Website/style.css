@@ -16,6 +16,16 @@ h3 {
   font-weight: 400;
 }
 
+.primary-button {
+  width: auto;
+  height: auto;
+  padding: 12px 35px;
+  border: 1px solid #000;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+}
+
 header {
   width: 90%;
   height: auto;
@@ -333,6 +343,113 @@ footer .links-container .row-container .social-container {
   position: absolute;
   top: 0px;
   right: 20px;
+}
+
+.product-container {
+  width: 70%;
+  height: auto;
+  margin: 100px 15%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+.product-container .snapshot-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-container .snapshot-container img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: #f3f5f7;
+}
+.product-container img {
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-color: #f3f5f7;
+  object-fit: cover;
+}
+.product-container .options-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.product-container .options-container h1 {
+  color: rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+.product-container .options-container h2 {
+  font-weight: 500;
+}
+.product-container .options-container p {
+  font-weight: 300;
+}
+.product-container .options-container .actions-container {
+  width: auto;
+  height: auto;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.product-container .options-container .actions-container input {
+  width: 100px;
+  height: auto;
+  padding: 12px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  outline: none;
+  font-size: 18px;
+}
+.product-container .options-container .row-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.description-container {
+  width: 70%;
+  height: auto;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.description-container h2 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: left;
+  font-weight: 400;
+}
+.description-container .detail-container {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-container .detail-container h1 {
+  font-weight: 400;
+  margin: 0;
+}
+.description-container .detail-container p {
+  font-weight: 300;
+}
+.description-container img {
+  width: 45%;
+  aspect-ratio: 1/1;
+  background-color: #f3f5f7;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
