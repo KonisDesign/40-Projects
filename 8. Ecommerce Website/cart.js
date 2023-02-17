@@ -1,3 +1,5 @@
+let cart = [];
+
 if (localStorage.getItem('cart') != null) {
     cart = JSON.parse(localStorage.getItem('cart'));
     console.log(cart);
