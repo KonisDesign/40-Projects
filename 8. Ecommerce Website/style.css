@@ -294,6 +294,7 @@ footer .links-container .row-container .social-container {
   gap: 10px;
   font-size: 18px;
   font-weight: 300;
+  position: relative;
 }
 .sort-container .row-container button {
   width: auto;
@@ -304,10 +305,38 @@ footer .links-container .row-container .social-container {
   font-weight: 300;
   cursor: pointer;
 }
+.sort-container .row-container button:hover + .sort-menu {
+  display: flex;
+}
+.sort-container .row-container .sort-menu {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  z-index: 2;
+}
+.sort-container .row-container .sort-menu:hover {
+  display: flex;
+}
+.sort-container .row-container .sort-menu button {
+  color: rgba(0, 0, 0, 0.55);
+}
+.sort-container .row-container .sort-menu button:hover {
+  color: #000;
+}
 
 .products-container {
   width: 70%;
   height: auto;
+  min-height: 300px;
   margin: 0px 15%;
   padding: 10px 0px 100px 0px;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.25);
@@ -450,6 +479,65 @@ footer .links-container .row-container .social-container {
   aspect-ratio: 1/1;
   background-color: #f3f5f7;
   object-fit: cover;
+}
+
+.title-list {
+  width: 70%;
+  height: auto;
+  margin: 40px 15% 0px 15%;
+  display: flex;
+  background-color: #f3f5f7;
+}
+.title-list h3 {
+  text-align: center;
+}
+.title-list .big {
+  width: 25%;
+}
+.title-list .normal {
+  width: 20%;
+}
+.title-list .small {
+  width: 5%;
+}
+
+.purchases-container {
+  width: 70%;
+  height: auto;
+  margin: 0px 15%;
+  display: flex;
+  flex-direction: column;
+}
+.purchases-container .row {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.purchases-container .row .big {
+  width: 25%;
+}
+.purchases-container .row .normal {
+  width: 20%;
+}
+.purchases-container .row .small {
+  width: 5%;
+}
+.purchases-container .row img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.purchases-container .row input {
+  border: none;
+  text-align: center;
+  outline: none;
+}
+.purchases-container .row button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

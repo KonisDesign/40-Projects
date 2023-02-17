@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>AEKI - Product</title>
+    <title>AEKI - Cart</title>
 </head>
 
 <body>
@@ -16,7 +16,9 @@
             <input type="text" placeholder="Search..">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <a href="./"><h1>AEKI</h1></a>
+        <a href="./">
+            <h1>AEKI</h1>
+        </a>
         <div class="nav-container">
             <button><i class="fa-regular fa-user"></i></button>
             <button><i class="fa-solid fa-bag-shopping"></i></button>
@@ -24,16 +26,23 @@
         </div>
     </header>
     <div class="title-container">
-        <h1>Shop</h1>
+        <h1>Cart</h1>
         <div class="path">
             <a href="./">HOME</a>
             <p>/</p>
-            <a href="shop.html">SHOP</a>
-            <p>/</p>
-            <p>PRODUCT</p>
+            <p>CART</p>
         </div>
     </div>
-    <div id="product-container"></div>
+    <div class="title-list">
+        <h3 class="small"></h3>
+        <h3 class="big">Product</h3>
+        <h3 class="big">Price</h3>
+        <h3 class="normal">Quantity</h3>
+        <h3 class="normal">Total</h3>
+        <h3 class="small"></h3>
+    </div>
+    <div class="purchases-container" id="purchases-container">
+    </div>
     <footer>
         <div class="links-container">
             <div class="block">
@@ -95,4 +104,4 @@
 
 </html>
 
-<script src="product.js"></script>
+<script src="cart.js"></script>

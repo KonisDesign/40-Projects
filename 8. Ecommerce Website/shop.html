@@ -14,7 +14,7 @@
             <input type="text" placeholder="Search..">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <h1>AEKI</h1>
+        <a href="./"><h1>AEKI</h1></a>
         <div class="nav-container">
             <button><i class="fa-regular fa-user"></i></button>
             <button><i class="fa-solid fa-bag-shopping"></i></button>
@@ -34,36 +34,16 @@
             <p>Showing 21 results</p>
             <p>|</p>
             <button>Sort by <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="sort-menu">
+                <button onclick="sort('none')">Sort by default</button>
+                <button onclick="sort('latest')">Sort by latest</button>
+            </div>
         </div>
         <div class="row-container">
             <button>Filter <i class="fa-solid fa-plus"></i></button>
         </div>
     </div>
-    <div class="products-container">
-        <div class="item" id="item-0" onclick="location.href='product.html';">
-            <img src="assets/chair/karlpetter-1.png" alt="product">
-        </div>
-        <div class="item" id="item-1">
-            <img src="assets/decoration/handskalad-1.png" alt="product">
-            <p>-15%</p>
-        </div>
-        <div class="item" id="item-2">
-            <img src="assets/household-linen/sanela-1.png" alt="product">
-        </div>
-        <div class="item" id="item-3">
-            <img src="assets/lamp/lauters-1.png" alt="product">
-        </div>
-        <div class="item" id="item-4">
-            <img src="assets/single-sofa/ekero-1.png" alt="product">
-        </div>
-        <div class="item" id="item-5">
-            <img src="assets/sofa/smedstorp-1.png" alt="product">
-            <p>-60%</p>
-        </div>
-        <div class="item" id="item-6">
-            <img src="assets/table/ekedalen-1.png" alt="product">
-        </div>
-    </div>
+    <div class="products-container" id="products-container"></div>
     <footer>
         <div class="links-container">
             <div class="block">
@@ -123,3 +103,5 @@
     </footer>
 </body>
 </html>
+
+<script src="script.js"></script>

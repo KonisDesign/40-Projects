@@ -1,0 +1,82 @@
+[
+    {
+        "id": "0",
+        "name": "Smedstorp",
+        "nameid": "smedstorp",
+        "collection": "Sofa",
+        "collectionid": "sofa",
+        "price": "299",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "1",
+        "name": "Ekerö",
+        "nameid": "ekero",
+        "collection": "Single sofa",
+        "collectionid": "single-sofa",
+        "price": "59",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "2",
+        "name": "Karlpetter",
+        "nameid": "karlpetter",
+        "collection": "Chair",
+        "collectionid": "chair",
+        "price": "39",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "3",
+        "name": "Lauters",
+        "nameid": "lauters",
+        "collection": "Lamp",
+        "collectionid": "lamp",
+        "price": "44",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "4",
+        "name": "Ekedalen",
+        "nameid": "ekedalen",
+        "collection": "Table",
+        "collectionid": "table",
+        "price": "215",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "5",
+        "name": "Handskalad",
+        "nameid": "handskalad",
+        "collection": "Decoration",
+        "collectionid": "decoration",
+        "price": "31",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "6",
+        "name": "Sanela",
+        "nameid": "sanela",
+        "collection": "Household linen",
+        "collectionid": "household-linen",
+        "price": "27",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    },
+
+    {
+        "id": "7",
+        "name": "Stockholm",
+        "nameid": "stockholm",
+        "collection": "TV stand",
+        "collectionid": "tv-stand",
+        "price": "119",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    }
+    
+]
