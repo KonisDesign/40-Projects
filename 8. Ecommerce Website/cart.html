@@ -21,7 +21,7 @@
         </a>
         <div class="nav-container">
             <button><i class="fa-regular fa-user"></i></button>
-            <button><i class="fa-solid fa-bag-shopping"></i></button>
+            <button onclick="location.href='cart.html';"><i class="fa-solid fa-bag-shopping"></i></button>
             <button><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
@@ -41,7 +41,10 @@
         <h3 class="normal">Total</h3>
         <h3 class="small"></h3>
     </div>
-    <div class="purchases-container" id="purchases-container">
+    <div class="purchases-container" id="purchases-container"></div>
+    <div class="actions-container">
+        <button class="primary-button" onclick="location.href='index.html';">Continue Shopping</button>
+        <button class="secondary-button" onclick="clearCart()">Clear Cart</button>
     </div>
     <footer>
         <div class="links-container">
