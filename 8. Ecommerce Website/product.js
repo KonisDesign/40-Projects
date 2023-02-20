@@ -26,7 +26,6 @@ function readData() {
 }
 
 function addToCart(id) {
-        console.log('test')
         cart = JSON.parse(localStorage.getItem('cart'));
         quantity = JSON.parse(localStorage.getItem('quantity'));
         if (cart == null) {
@@ -38,10 +37,12 @@ function addToCart(id) {
                 if (id == cart[i]) {
                     let newquantity = Number(quantity[i]) + Number(document.getElementById('quantityinput').value);
                     quantity.splice(i, 1, newquantity);
+                    i = cart.length;
+                    break;
                 } else if (i == (cart.length - 1)) {
                     cart.push(id);
                     quantity.push(document.getElementById('quantityinput').value);
-                    break
+                    break;
                 }
             }
         } else {
@@ -52,6 +53,7 @@ function addToCart(id) {
 
     localStorage.setItem('cart', JSON.stringify(cart));
     localStorage.setItem('quantity', JSON.stringify(quantity));
+    window.location.reload();
 }
 
 readData();

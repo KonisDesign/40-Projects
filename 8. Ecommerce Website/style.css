@@ -73,6 +73,27 @@ header .nav-container {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+  position: relative;
+}
+header .nav-container span {
+  width: 20px;
+  height: 20px;
+  display: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcb14a;
+  position: absolute;
+  right: 45px;
+  top: 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+header .nav-container button:hover {
+  color: #dcb14a;
+}
+header .nav-container button:hover ~ span {
+  color: #fff;
 }
 
 .home-container {
