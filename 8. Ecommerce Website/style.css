@@ -39,6 +39,89 @@ h3 {
   cursor: pointer;
 }
 
+main {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: none;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+main .link-container {
+  width: 350px;
+  height: 100%;
+  max-height: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+}
+main .link-container .close-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.25);
+}
+main .link-container h1 {
+  margin-top: 90px;
+}
+main .link-container a {
+  margin: 0px 0px 12px 0px;
+  color: #000;
+  font-size: 18px;
+}
+main .link-container a:hover {
+  color: #dcb14a;
+}
+main .link-container .row {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main .link-container button {
+  margin: 0px 0px 12px 0px;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+main .link-container button:hover {
+  color: #dcb14a;
+}
+main .link-container button i {
+  margin: -10px 0px 0px 10px;
+}
+main .link-container .collection-menu {
+  margin-left: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+main .link-container .collection-menu a {
+  color: rgba(0, 0, 0, 0.55);
+}
+main .link-container .collection-menu a:hover {
+  color: #000;
+}
+
 header {
   width: 90%;
   height: auto;
@@ -61,6 +144,12 @@ header .search-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header .search-container:hover {
+  border-bottom: 1px solid #dcb14a;
+}
+header .search-container:hover i {
+  color: #dcb14a;
 }
 header .search-container input {
   width: 100%;
@@ -696,7 +785,8 @@ footer .links-container .row-container .social-container {
 .checkout-container .user-container .row:nth-child(3) {
   justify-content: space-between;
 }
-.checkout-container .user-container input, .checkout-container .user-container select {
+.checkout-container .user-container input,
+.checkout-container .user-container select {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -758,6 +848,7 @@ footer .links-container .row-container .social-container {
 }
 .checkout-container .summary-container button {
   margin-top: 20px;
+  width: 100%;
 }
 .checkout-container .row {
   width: 100%;
@@ -792,6 +883,20 @@ footer .links-container .row-container .social-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.order-container {
+  width: 70%;
+  height: auto;
+  margin: 100px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.order-container i {
+  font-size: 50px;
+  color: #6dde6d;
 }
 
 .scale-up-center {

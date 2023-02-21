@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>AEKI - Cart</title>
+    <title>AEKI - Thanks !</title>
 </head>
-
 <body>
     <main id="main">
         <div class="link-container">
@@ -41,9 +39,7 @@
             <input type="text" placeholder="Search..">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <a href="./">
-            <h1>AEKI</h1>
-        </a>
+        <a href="./"><h1>AEKI</h1></a>
         <div class="nav-container">
             <button><i class="fa-regular fa-user"></i></button>
             <button onclick="location.href='cart.html';"><i class="fa-solid fa-bag-shopping"></i></button>
@@ -51,47 +47,10 @@
             <span id="notification"></span>
         </div>
     </header>
-    <div class="title-container">
-        <h1>Cart</h1>
-        <div class="path">
-            <a href="./">HOME</a>
-            <p>/</p>
-            <p>CART</p>
-        </div>
-    </div>
-    <div class="title-list" id="titleList">
-        <h3 class="small"></h3>
-        <h3 class="big">Product</h3>
-        <h3 class="big">Price</h3>
-        <h3 class="normal">Quantity</h3>
-        <h3 class="normal">Total</h3>
-        <h3 class="small"></h3>
-    </div>
-    <div class="purchases-container" id="purchases-container"></div>
-    <div class="actions-container">
-        <button class="primary-button" onclick="location.href='index.html';"><i class="fa-solid fa-arrow-left-long"></i>Continue Shopping</button>
-        <button class="secondary-button" id="clearCart" onclick="clearCart()">Clear Cart</button>
-    </div>
-    <div class="cart-container" id="checkout">
-        <div class="discount-container">
-            <h3>Coupon Discount</h3>
-            <p>Enter your coupon code.</p>
-            <input type="text" placeholder="Coupon code">
-            <button class="secondary-button">Apply coupon</button>
-        </div>
-        <div class="cart-action">
-            <div class="total-container">
-                <div class="row">
-                    <h3>Subtotal</h3>
-                    <p id="subtotal">80€</p>
-                </div>
-                <div class="row">
-                    <h3>Total</h3>
-                    <p id="total">80€</p>
-                </div>
-            </div>
-            <button class="primary-button" onclick="location.href='checkout.html'">Proceed to checkout</button>
-        </div>
+    <div class="order-container">
+        <i class="fa-regular fa-face-laugh-beam"></i>
+        <h1>Thanks for your order</h1>
+        <p>You will receive a confirmation email with your invoice.</p>
     </div>
     <footer>
         <div class="links-container">
@@ -151,9 +110,7 @@
         <a href="#">&copy; 2023 AEKI. Devos Julien</a>
     </footer>
 </body>
-
 </html>
 
-<script src="cart.js"></script>
-<script type="text/javascript" src="notifications.js"></script>
 <script type="text/javascript" src="script.js"></script>
+<script src="order.js"></script>

@@ -9,17 +9,45 @@
     <link rel="stylesheet" href="style.css">
     <title>AEKI</title>
 </head>
+
 <body>
+    <main id="main">
+        <div class="link-container">
+            <button class="close-button" onclick="hideMain()"><i class="fa-solid fa-xmark"></i></button>
+            <h1>AEKI</h1>
+            <a href="./">Home</a>
+            <a href="shop.html">All products</a>
+            <button onclick="showCollection()">Collection<i class="fa-solid fa-sort-down"></i></button>
+            <div class="collection-menu" id="collection-menu">
+                <a href="shop.html?collection=chair">Chair</a>
+                <a href="shop.html?collection=decoration">Decoration</a>
+                <a href="shop.html?collection=household-linen">Household linen</a>
+                <a href="shop.html?collection=lamp">Lamp</a>
+                <a href="shop.html?collection=single-sofa">Single sofa</a>
+                <a href="shop.html?collection=sofa">Sofa</a>
+                <a href="shop.html?collection=table">Table</a>
+                <a href="shop.html?collection=tv-stand">TV stand</a>
+            </div>
+            <h3>Follow US</h3>
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </main>
     <header>
         <div class="search-container">
             <input type="text" placeholder="Search..">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <a href="#"><h1>AEKI</h1></a>
+        <a href="#">
+            <h1>AEKI</h1>
+        </a>
         <div class="nav-container">
             <button><i class="fa-regular fa-user"></i></button>
             <button onclick="location.href='cart.html';"><i class="fa-solid fa-bag-shopping"></i></button>
-            <button><i class="fa-solid fa-bars"></i></button>
+            <button onclick="showMain()"><i class="fa-solid fa-bars"></i></button>
             <span id="notification"></span>
         </div>
     </header>

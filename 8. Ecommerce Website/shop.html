@@ -9,6 +9,31 @@
     <title>AEKI - shop</title>
 </head>
 <body>
+    <main id="main">
+        <div class="link-container">
+            <button class="close-button" onclick="hideMain()"><i class="fa-solid fa-xmark"></i></button>
+            <h1>AEKI</h1>
+            <a href="./">Home</a>
+            <a href="shop.html">All products</a>
+            <button onclick="showCollection()">Collection<i class="fa-solid fa-sort-down"></i></button>
+            <div class="collection-menu" id="collection-menu">
+                <a href="shop.html?collection=chair">Chair</a>
+                <a href="shop.html?collection=decoration">Decoration</a>
+                <a href="shop.html?collection=household-linen">Household linen</a>
+                <a href="shop.html?collection=lamp">Lamp</a>
+                <a href="shop.html?collection=single-sofa">Single sofa</a>
+                <a href="shop.html?collection=sofa">Sofa</a>
+                <a href="shop.html?collection=table">Table</a>
+                <a href="shop.html?collection=tv-stand">TV stand</a>
+            </div>
+            <h3>Follow US</h3>
+            <div class="row">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </main>
     <header>
         <div class="search-container">
             <input type="text" placeholder="Search..">
@@ -107,3 +132,4 @@
 
 <script src="shop.js"></script>
 <script type="text/javascript" src="notifications.js"></script>
+<script type="text/javascript" src="script.js"></script>

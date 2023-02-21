@@ -6,7 +6,7 @@ try {
     cart = JSON.parse(localStorage.getItem('cart'));
     quantity = JSON.parse(localStorage.getItem('quantity'));
 } catch {
-    window.location.href("index.html");
+    window.location.href = "index.html";
 }
 
 document.getElementById('bill').innerHTML = '<div class="row"><p>Product</p><p>Total</p></div>';
