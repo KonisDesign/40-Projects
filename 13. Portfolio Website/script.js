@@ -25,3 +25,6 @@ function mainshow(id) {
         id.style.display = "flex";
     }
 }
+
+const year = new Date().getFullYear();
+document.getElementById("year").innerHTML = year - 2008;
