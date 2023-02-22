@@ -28,6 +28,10 @@ h3 {
     font-weight: 400;
 }
 
+i {
+    color: #000;
+}
+
 .primary-button {
     width: auto;
     height: auto;
@@ -98,7 +102,7 @@ main {
             color: #000;
             font-size: 18px;
 
-            &:hover {
+            &:hover, i:hover {
                 color: $goldcolor;
             }
         }
@@ -123,7 +127,7 @@ main {
             font-size: 18px;
             cursor: pointer;
 
-            &:hover {
+            &:hover, i:hover {
                 color: $goldcolor;
             }
 
@@ -226,7 +230,7 @@ header {
             cursor: pointer;
         }
 
-        button:hover {
+        button:hover, i:hover {
             color: $goldcolor;
         }
 
