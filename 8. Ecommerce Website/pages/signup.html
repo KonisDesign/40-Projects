@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
-    <title>AEKI</title>
+    <title>AEKI - SignUp</title>
 </head>
 
 <body>
@@ -45,70 +45,22 @@
             <h1>AEKI</h1>
         </a>
         <div class="nav-container">
-            <button onclick="location.href='login.html';"><i class="fa-regular fa-user"></i></button>
+            <button><i class="fa-regular fa-user"></i></button>
             <button onclick="location.href='cart.html';"><i class="fa-solid fa-bag-shopping"></i></button>
             <button onclick="showMain()"><i class="fa-solid fa-bars"></i></button>
             <span id="notification"></span>
         </div>
     </header>
-    <div class="home-container">
-        <div class="item big" onclick="location.href='shop.html?collection=sofa'">
-            <h2>Smedstorp</h2>
-            <h3>Sofa collection</h3>
-            <img src="../assets/sofa/smedstorp-1.png" alt="product">
-        </div>
-        <div class="column">
-            <div class="item small" onclick="location.href='shop.html?collection=single-sofa'">
-                <h2>Ekerö</h2>
-                <h3>Single sofa collection</h3>
-                <img src="../assets/single-sofa/ekero-1.png" alt="product">
-            </div>
-            <div class="item small" onclick="location.href='shop.html?collection=chair'">
-                <h2>Karlpetter</h2>
-                <h3>Chair collection</h3>
-                <img src="../assets/chair/karlpetter-1.png" alt="product">
-            </div>
-        </div>
-    </div>
-    <div class="home-container">
-        <div class="item square" onclick="location.href='shop.html?collection=lamp'">
-            <h2>Lauters</h2>
-            <h3>Lamp collection</h3>
-            <img src="../assets/lamp/lauters-1.png" alt="product">
-        </div>
-        <div class="item long" onclick="location.href='shop.html?collection=table'">
-            <h2>Ekedalen</h2>
-            <h3>Table collection</h3>
-            <img src="../assets/table/ekedalen-1.png" alt="product">
-        </div>
-    </div>
-    <div class="home-container">
-        <div class="item big-square" onclick="location.href='shop.html?collection=decoration'">
-            <h2>Handskalad</h2>
-            <h3>Decoration collection</h3>
-            <img src="../assets/decoration/handskalad-1.png" alt="product">
-        </div>
-        <div class="item big-square" onclick="location.href='shop.html?collection=household-linen'">
-            <h2>Sanela</h2>
-            <h3>Household linen collection</h3>
-            <img src="../assets/household-linen/sanela-1.png" alt="product">
-        </div>
-    </div>
-    <div class="home-container">
-        <div class="item full" onclick="location.href='shop.html?collection=tv-stand'">
-            <h2>Stockholm</h2>
-            <h3>TV stand collection</h3>
-            <img src="../assets/tv-stand/stockholm-1.png" alt="product">
-        </div>
-    </div>
-    <div class="newsletter-container">
-        <h1>Our Newsletter</h1>
-        <p>Subscribe our newsletter and get discount 50% off</p>
-        <div class="input-container">
-            <input type="text" placeholder="Your name">
-            <input type="email" placeholder="Your email address">
-            <button><i class="fa-solid fa-arrow-right"></i></button>
-        </div>
+    <div class="login-container">
+        <h1>Signup</h1>
+        <input type="text" placeholder="Nom">
+        <input type="text" placeholder="Prénom">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <p>We do not collect any personal data from our website users. We value your privacy and only gather
+            non-personal information to improve our website and services.</p>
+        <button onclick="location.href='index.html';" class="primary-button">Sign up</button>
+        <a href="login.html">Have an account?</a>
     </div>
     <footer>
         <div class="links-container">
@@ -170,5 +122,5 @@
 </body>
 
 </html>
+
 <script type="text/javascript" src="../js/script.js"></script>
-<script type="text/javascript" src="../js/notifications.js"></script>

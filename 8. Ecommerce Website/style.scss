@@ -1443,6 +1443,76 @@ footer {
     }
 }
 
+.login-container {
+    width: $normalLarge;
+    height: auto;
+    margin: 60px $normalMargin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    @media all and (max-width: 428px) {
+        width: $smallLarge;
+        margin: 30px $smallMargin;
+    }
+
+    input {
+        width: 300px;
+        height: auto;
+        padding: 15px 10px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.10);
+        outline: none;
+
+        @media all and (max-width: 320px) {
+            width: 95%;
+        }
+    }
+
+    .row {
+        width: 320px;
+        height: auto;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media all and (max-width: 320px) {
+            width: calc(95% + 20px);
+        }
+
+        input {
+            width: auto;
+        }
+
+        a {
+            color: $goldcolor;
+        }
+    }
+
+    button {
+        width: 320px;
+
+        @media all and (max-width: 320px) {
+            width: calc(95% + 20px);
+        }
+    }
+
+    a {
+        &:hover {
+            color: $goldcolor;
+        }
+    }
+
+    p {
+        width: 320px;
+
+        @media all and (max-width: 320px) {
+            width: calc(95% + 20px);
+        }
+    }
+}
+
 .scale-up-center {
     -webkit-animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both;
     animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both
