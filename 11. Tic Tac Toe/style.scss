@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html, body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.game-container {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #000;
+        background-color: #fff;
+        font-size: 25px;
+        cursor: pointer;
+
+        &:disabled {
+            color: #000;
+        }
+    }
+}
+
+.win-container {
+    width: auto;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#newgame {
+    width: auto;
+    height: auto;
+    padding: 12px 20px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    display: none;
+    font-size: 20px;
+    cursor: pointer;
+}
