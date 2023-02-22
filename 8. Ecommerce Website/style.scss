@@ -28,10 +28,6 @@ h3 {
     font-weight: 400;
 }
 
-i {
-    color: #000;
-}
-
 .primary-button {
     width: auto;
     height: auto;
@@ -160,6 +156,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    i {
+        color: #000;
+    }
 
     button {
         border: none;
@@ -1051,6 +1051,10 @@ footer {
             cursor: pointer;
         }
     }
+
+    i {
+        color: #000;
+    }
 }
 
 .nopurchase {
@@ -1087,6 +1091,7 @@ footer {
 
     i {
         margin-right: 20px;
+        color: #fff;
     }
 
     button {

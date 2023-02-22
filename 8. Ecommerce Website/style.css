@@ -17,10 +17,6 @@ h3 {
   font-weight: 400;
 }
 
-i {
-  color: #000;
-}
-
 .primary-button {
   width: auto;
   height: auto;
@@ -139,6 +135,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+header i {
+  color: #000;
+}
 header button {
   border: none;
   background-color: transparent;
@@ -189,6 +188,7 @@ header .nav-container {
 @media all and (max-width: 428px) {
   header .nav-container {
     width: auto;
+    max-width: 30%;
   }
 }
 header .nav-container span {
@@ -990,6 +990,9 @@ footer .links-container .row-container .social-container {
   background-color: #fff;
   cursor: pointer;
 }
+.purchases-container i {
+  color: #000;
+}
 
 .nopurchase {
   width: 100%;
@@ -1026,6 +1029,7 @@ footer .links-container .row-container .social-container {
 }
 .actions-container i {
   margin-right: 20px;
+  color: #fff;
 }
 @media all and (max-width: 428px) {
   .actions-container button {
