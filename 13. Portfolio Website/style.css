@@ -352,6 +352,7 @@ main .items .active:hover {
   flex-direction: column;
   align-items: flex-start;
   background-color: #191d2b;
+  position: relative;
 }
 .container .project-container .card img {
   width: 100%;
@@ -367,9 +368,20 @@ main .items .active:hover {
   color: #0d6efd;
   background-color: transparent;
 }
+.container .project-container .card .stack-list .primary:hover {
+  color: #fff;
+  background-color: #0d6efd;
+}
 .container .project-container .card .stack-list .secondary {
   color: #fff;
   background-color: #0d6efd;
+}
+.container .project-container .card .shared {
+  position: absolute;
+  color: #f3f3f3;
+  font-size: 20px;
+  right: 20px;
+  bottom: 20px;
 }
 
 #about h1,
