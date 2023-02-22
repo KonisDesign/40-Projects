@@ -146,5 +146,27 @@
         "price": "79",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "13",
+        "name": "Tvärhand",
+        "nameid": "tvarhand",
+        "collection": "Lamp",
+        "collectionid": "lamp",
+        "price": "19",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "14",
+        "name": "Frötorp",
+        "nameid": "frotorp",
+        "collection": "Table",
+        "collectionid": "table",
+        "price": "149",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
     }
 ]
