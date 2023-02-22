@@ -6,17 +6,21 @@
         "collection": "Sofa",
         "collectionid": "sofa",
         "price": "299",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
         "id": "1",
         "name": "Ekerö",
         "nameid": "ekero",
-        "collection": "Single sofa",
-        "collectionid": "single-sofa",
+        "collection": "Armchair",
+        "collectionid": "armchair",
         "price": "59",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
@@ -26,7 +30,9 @@
         "collection": "Chair",
         "collectionid": "chair",
         "price": "39",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
@@ -36,7 +42,9 @@
         "collection": "Lamp",
         "collectionid": "lamp",
         "price": "44",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
@@ -46,7 +54,9 @@
         "collection": "Table",
         "collectionid": "table",
         "price": "215",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
@@ -56,7 +66,9 @@
         "collection": "Decoration",
         "collectionid": "decoration",
         "price": "31",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+
     },
 
     {
@@ -66,7 +78,8 @@
         "collection": "Household linen",
         "collectionid": "household-linen",
         "price": "27",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
     },
 
     {
@@ -76,7 +89,62 @@
         "collection": "TV stand",
         "collectionid": "tv-stand",
         "price": "119",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "8",
+        "name": "Landskrona",
+        "nameid": "landskrona",
+        "collection": "Sofa",
+        "collectionid": "sofa",
+        "price": "999",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "9",
+        "name": "Stockholm",
+        "nameid": "stockholm",
+        "collection": "Sofa",
+        "collectionid": "sofa",
+        "price": "1999",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "10",
+        "name": "Ekenaeset",
+        "nameid": "ekenaeset",
+        "collection": "Armchair",
+        "collectionid": "armchair",
+        "price": "249",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "11",
+        "name": "Glamsen",
+        "nameid": "glamsen",
+        "collection": "Armchair",
+        "collectionid": "armchair",
+        "price": "179",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
+    },
+
+    {
+        "id": "12",
+        "name": "Ekedalen",
+        "nameid": "ekedalen",
+        "collection": "Chair",
+        "collectionid": "chair",
+        "price": "79",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "longdescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et augue in turpis iaculis posuere. Aliquam vitae ex volutpat, fermentum velit vel, venenatis augue. Mauris nisl lorem, sagittis vel gravida at, pulvinar posuere nisl. Nulla euismod neque viverra lectus lobortis imperdiet."
     }
-    
 ]
