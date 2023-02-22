@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>AEKI - Thanks !</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>AEKI - shop</title>
 </head>
 <body>
     <main id="main">
@@ -47,11 +47,29 @@
             <span id="notification"></span>
         </div>
     </header>
-    <div class="order-container">
-        <i class="fa-regular fa-face-laugh-beam"></i>
-        <h1>Thanks for your order</h1>
-        <p>You will receive a confirmation email with your invoice.</p>
+    <div class="title-container">
+        <h1>Shop</h1>
+        <div class="path">
+            <a href="./">HOME</a>
+            <p>/</p>
+            <p>SHOP</p>
+        </div>
     </div>
+    <div class="sort-container">
+        <div class="row-container">
+            <p>Showing 21 results</p>
+            <p>|</p>
+            <button>Sort by <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="sort-menu">
+                <button onclick="sort('none')">Sort by default</button>
+                <button onclick="sort('latest')">Sort by latest</button>
+            </div>
+        </div>
+        <div class="row-container">
+            <button>Filter <i class="fa-solid fa-plus"></i></button>
+        </div>
+    </div>
+    <div class="products-container" id="products-container"></div>
     <footer>
         <div class="links-container">
             <div class="block">
@@ -112,5 +130,6 @@
 </body>
 </html>
 
-<script type="text/javascript" src="script.js"></script>
-<script src="order.js"></script>
+<script src="../js/shop.js"></script>
+<script type="text/javascript" src="../js/notifications.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>

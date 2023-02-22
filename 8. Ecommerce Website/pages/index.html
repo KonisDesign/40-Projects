@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>AEKI - Cart</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>AEKI</title>
 </head>
 
 <body>
@@ -41,7 +41,7 @@
             <input type="text" placeholder="Search..">
             <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <a href="./">
+        <a href="#">
             <h1>AEKI</h1>
         </a>
         <div class="nav-container">
@@ -51,46 +51,63 @@
             <span id="notification"></span>
         </div>
     </header>
-    <div class="title-container">
-        <h1>Cart</h1>
-        <div class="path">
-            <a href="./">HOME</a>
-            <p>/</p>
-            <p>CART</p>
+    <div class="home-container">
+        <div class="item big" onclick="location.href='shop.html?collection=sofa'">
+            <h2>Smedstorp</h2>
+            <h3>Sofa collection</h3>
+            <img src="../assets/sofa/smedstorp-1.png" alt="product">
         </div>
-    </div>
-    <div class="title-list" id="titleList">
-        <h3 class="small"></h3>
-        <h3 class="big">Product</h3>
-        <h3 class="big">Price</h3>
-        <h3 class="normal">Quantity</h3>
-        <h3 class="normal">Total</h3>
-        <h3 class="small"></h3>
-    </div>
-    <div class="purchases-container" id="purchases-container"></div>
-    <div class="actions-container">
-        <button class="primary-button" onclick="location.href='index.html';"><i class="fa-solid fa-arrow-left-long"></i>Continue Shopping</button>
-        <button class="secondary-button" id="clearCart" onclick="clearCart()">Clear Cart</button>
-    </div>
-    <div class="cart-container" id="checkout">
-        <div class="discount-container">
-            <h3>Coupon Discount</h3>
-            <p>Enter your coupon code.</p>
-            <input type="text" placeholder="Coupon code">
-            <button class="secondary-button">Apply coupon</button>
-        </div>
-        <div class="cart-action">
-            <div class="total-container">
-                <div class="row">
-                    <h3>Subtotal</h3>
-                    <p id="subtotal">80€</p>
-                </div>
-                <div class="row">
-                    <h3>Total</h3>
-                    <p id="total">80€</p>
-                </div>
+        <div class="column">
+            <div class="item small" onclick="location.href='shop.html?collection=single-sofa'">
+                <h2>Ekerö</h2>
+                <h3>Single sofa collection</h3>
+                <img src="../assets/single-sofa/ekero-1.png" alt="product">
             </div>
-            <button class="primary-button" onclick="location.href='checkout.html'">Proceed to checkout</button>
+            <div class="item small" onclick="location.href='shop.html?collection=chair'">
+                <h2>Karlpetter</h2>
+                <h3>Chair collection</h3>
+                <img src="../assets/chair/karlpetter-1.png" alt="product">
+            </div>
+        </div>
+    </div>
+    <div class="home-container">
+        <div class="item square" onclick="location.href='shop.html?collection=lamp'">
+            <h2>Lauters</h2>
+            <h3>Lamp collection</h3>
+            <img src="../assets/lamp/lauters-1.png" alt="product">
+        </div>
+        <div class="item long" onclick="location.href='shop.html?collection=table'">
+            <h2>Ekedalen</h2>
+            <h3>Table collection</h3>
+            <img src="../assets/table/ekedalen-1.png" alt="product">
+        </div>
+    </div>
+    <div class="home-container">
+        <div class="item big-square" onclick="location.href='shop.html?collection=decoration'">
+            <h2>Handskalad</h2>
+            <h3>Decoration collection</h3>
+            <img src="../assets/decoration/handskalad-1.png" alt="product">
+        </div>
+        <div class="item big-square" onclick="location.href='shop.html?collection=household-linen'">
+            <h2>Sanela</h2>
+            <h3>Household linen collection</h3>
+            <img src="../assets/household-linen/sanela-1.png" alt="product">
+        </div>
+    </div>
+    <div class="home-container">
+        <div class="item full" onclick="location.href='shop.html?collection=tv-stand'">
+            <h2>Stockholm</h2>
+            <h3>TV stand collection</h3>
+            <img src="../assets/tv-stand/stockholm-1.png" alt="product">
+        </div>
+    </div>
+    <div class="newsletter-container">
+        <h1>Our Newsletter</h1>
+        <p>Subscribe our newsletter and get discount 50% off</p>
+        <div class="input-container">
+            <input type="text" placeholder="Your name">
+            <input type="email" placeholder="Your email address">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
         </div>
     </div>
     <footer>
@@ -153,7 +170,5 @@
 </body>
 
 </html>
-
-<script src="cart.js"></script>
-<script type="text/javascript" src="notifications.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
+<script type="text/javascript" src="../js/notifications.js"></script>

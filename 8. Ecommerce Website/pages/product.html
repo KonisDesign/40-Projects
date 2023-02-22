@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b9a8cc2a2e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>AEKI - Checkout</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>AEKI - Product</title>
 </head>
+
 <body>
     <main id="main">
         <div class="link-container" id="links">
@@ -48,67 +50,16 @@
         </div>
     </header>
     <div class="title-container">
-        <h1>Checkout</h1>
+        <h1>Shop</h1>
         <div class="path">
             <a href="./">HOME</a>
             <p>/</p>
-            <a href="cart.html">CART</a>
+            <a href="shop.html">SHOP</a>
             <p>/</p>
-            <p>CHECKOUT</p>
+            <p>PRODUCT</p>
         </div>
     </div>
-    <div class="checkout-container">
-        <div class="user-container">
-            <div class="row">
-                <p><i class="fa-solid fa-check"></i>Returning customer?</p>
-                <a href="#">Click here to login</a>
-            </div>
-            <h3>Billing details</h3>
-            <div class="row">
-                <div class="column">
-                    <p>First name</p>
-                    <input type="text">
-                </div>
-                <div class="column">
-                    <p>Last name</p>
-                    <input type="text">
-                </div>
-            </div>
-            <p>Company name (optional)</p>
-            <input type="text">
-            <p>Country</p>
-            <select>
-                <option>France</option>
-                <option>Switzerland</option>
-            </select>
-            <p>Street address</p>
-            <input type="text" id="address" placeholder="House number and street name">
-            <input type="text" placeholder="Appartement etc (optional)">
-            <p>Town / City</p>
-            <input type="text">
-            <p>Postcode / ZIP</p>
-            <input type="text">
-            <p>Phone</p>
-            <input type="number">
-            <p>Email address</p>
-            <input type="email">
-            <h3>Additional information</h3>
-            <p>Order notes (optional)</p>
-            <textarea placeholder="Notes about your order"></textarea>
-        </div>
-        <div class="summary-container">
-            <div class="row">
-                <p><i class="fa-solid fa-check"></i>Have a coupon? </p>
-                <a href="#">Click here to enter a code</a>
-            </div>
-            <h3>Your order</h3>
-            <div class="bill-container" id="bill">
-                
-            </div>
-            <p>Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
-            <button class="primary-button" onclick="location.href='order.html'">Place Order</button>
-        </div>
-    </div>
+    <div id="product-container"></div>
     <footer>
         <div class="links-container">
             <div class="block">
@@ -167,8 +118,9 @@
         <a href="#">&copy; 2023 AEKI. Devos Julien</a>
     </footer>
 </body>
+
 </html>
 
-<script src="checkout.js"></script>
-<script src="notifications.js"></script>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../js/product.js"></script>
+<script type="text/javascript" src="../js/notifications.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
