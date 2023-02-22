@@ -320,6 +320,18 @@ main .items .active:hover {
 .container .stack-list .aftereffects {
   background-color: #9999ff;
 }
+.container .stack-list .vuejs {
+  background-color: #35495e;
+}
+.container .stack-list .vuejs i {
+  color: #4fc08d;
+}
+.container .stack-list .firebase {
+  background-color: #039be5;
+}
+.container .stack-list .firebase i {
+  color: #ffca28;
+}
 .container .last {
   margin-bottom: 40px;
 }
