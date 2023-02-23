@@ -8,7 +8,14 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div class="game-container">
+    <h1 class="tracking-in-contract-bck-top" id="title">TIC TAC TOE</h1>
+    <div class="tracking-in-contract-bck-top" id="level">
+        <button class="primary-button" onclick="startGame('0')">Easy</button>
+        <button class="primary-button" onclick="startGame('1')">Medium</button>
+        <button class="primary-button" onclick="startGame('2')">Hard</button>
+    </div>
+    <img class="slide-in-right" src="assets/note.png" alt="back">
+    <div class="game-container scale-in-center" id="game">
         <button id="button0" onclick="press('0', 'button0', 'X')"></button>
         <button id="button1" onclick="press('1', 'button1', 'X')"></button>
         <button id="button2" onclick="press('2', 'button2', 'X')"></button>
@@ -21,7 +28,7 @@
     </div>
     <div class="win-container" id="win-container">
         <h1 id="winner"></h1>
-        <button id="newgame" onclick="window.location.reload();">New game</button>
+        <button class="primary-button" id="newgame" onclick="window.location.reload();">New game</button>
     </div>
 </body>
 </html>
