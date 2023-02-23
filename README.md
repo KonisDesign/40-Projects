@@ -8,6 +8,7 @@
 [5. Stopwatch App](https://konisdesign.github.io/40-Projects/5.%20Stopwatch%20App/) <br/>
 [8. Ecommerce Website](https://konisdesign.github.io/40-Projects/8.%20Ecommerce%20Website/pages/) <br/>
 [10. Password Generator](https://konisdesign.github.io/40-Projects/10.%20Password%20Generator/) <br/>
+[11. Tic Tac Toe](https://konisdesign.github.io/40-Projects/11.%20Tic%20Tac%20Toe/) <br/>
 [13. Portfolio Website](https://konisdesign.github.io/40-Projects/13.%20Portfolio%20Website/)
 
 
