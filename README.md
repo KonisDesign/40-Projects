@@ -9,7 +9,8 @@
 [8. Ecommerce Website](https://konisdesign.github.io/40-Projects/8.%20Ecommerce%20Website/pages/) <br/>
 [10. Password Generator](https://konisdesign.github.io/40-Projects/10.%20Password%20Generator/) <br/>
 [11. Tic Tac Toe](https://konisdesign.github.io/40-Projects/11.%20Tic%20Tac%20Toe/) <br/>
-[13. Portfolio Website](https://konisdesign.github.io/40-Projects/13.%20Portfolio%20Website/)
+[13. Portfolio Website](https://konisdesign.github.io/40-Projects/13.%20Portfolio%20Website/) <br/>
+[38. To-Do List App](https://github.com/KonisDesign/40-Projects/tree/main/38.%20To-Do%20List%20App/frontend)
 
 
 ![alt text](https://raw.githubusercontent.com/KonisDesign/40-Projects/main/projects.JPG)
