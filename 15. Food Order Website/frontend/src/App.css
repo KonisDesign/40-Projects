@@ -57,3 +57,39 @@ a {
   height: 60px;
   font-weight: 700;
 }
+
+.close-button {
+  border: none;
+  background-color: transparent;
+  color: #93826E;
+  font-size: 40px;
+  font-weight: 100;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}
+
+.bronze {
+  color: #93826E;
+}
+
+.gray {
+  color: #464646;
+}
+
+.white {
+  color: #fff;
+}
+
+.no-border {
+  border: none;
+}
+
+input, select, textarea {
+  padding: 10px 0px 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+}

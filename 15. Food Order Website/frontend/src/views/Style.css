@@ -203,6 +203,7 @@ header .row .bronze {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  text-align: center;
 }
 .meal-container .item button {
   display: none;
@@ -236,16 +237,6 @@ header .row .bronze {
   flex-direction: column;
   align-items: center;
   position: relative;
-}
-.product-container .close-button {
-  border: none;
-  background-color: transparent;
-  color: #93826E;
-  font-size: 40px;
-  font-weight: 100;
-  position: absolute;
-  top: 50px;
-  right: 40px;
 }
 .product-container .top-container {
   width: 100%;
@@ -325,6 +316,111 @@ header .row .bronze {
 }
 .product-container .infos p {
   color: #7F7F7F;
+}
+
+.cart-container {
+  width: 70%;
+  height: auto;
+  min-height: 100%;
+  padding: 0px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.cart-container .head {
+  width: 100%;
+  height: auto;
+  margin: 100px 0px 40px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-container .head h1 {
+  font-weight: 300;
+}
+.cart-container .content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cart-container .content .item {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.cart-container .content .item:first-child, .cart-container .content .item:last-child {
+  border: none;
+}
+.cart-container .content .item h1 {
+  color: #fff;
+}
+.cart-container .content .item .row {
+  width: 300px;
+  display: flex;
+}
+.cart-container .content .item .row h3 {
+  width: 33.3333333333%;
+  text-align: center;
+}
+.cart-container .content .item .row img {
+  width: 50px;
+  height: auto;
+}
+.cart-container .content .item .row:first-child h3 {
+  width: auto;
+}
+.cart-container .content .item button {
+  padding: 10px 30px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.cart-container .content .item button i {
+  margin: 8px;
+}
+.cart-container .content .top h3 {
+  font-weight: 500;
+}
+.cart-container .checkout {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.cart-container .checkout .contact-infos {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.cart-container .checkout .contact-infos h1 {
+  color: #93826E;
+  font-weight: 300;
+}
+.cart-container .checkout .contact-infos p {
+  width: 40%;
+  text-align: left;
+  color: #fff;
+  font-weight: 300;
+}
+.cart-container .checkout .contact-infos .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-container .checkout .contact-infos .row input {
+  width: 40%;
+}
+.cart-container .checkout .contact-infos input {
+  width: calc(100% - 12px);
 }
 
 footer {

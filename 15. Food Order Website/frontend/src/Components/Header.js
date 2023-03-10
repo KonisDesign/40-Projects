@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import './Style.css'
+import '../views/Style.css'
 
 export default function Header() {
 
@@ -21,8 +21,8 @@ export default function Header() {
             <button className='bronze' onClick={goMeal}>MEAL</button>
         </div>
         <div className='row'>
-            <button><i className="fa-solid fa-bag-shopping bronze"></i> Cart</button>
-            <button><i className="fa-solid fa-bars white"></i></button>
+            <button onClick={() => navigate('/cart')}><i className="fa-solid fa-bag-shopping bronze"></i> Cart</button>
+            {/* <button><i className="fa-solid fa-bars white"></i></button> */}
         </div>
     </header>
   )

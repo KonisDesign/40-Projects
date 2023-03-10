@@ -30,7 +30,7 @@ export default function Hero() {
                     <h2>Paiement 100% sécurisé</h2>
                 </div>
                 <div className='column'>
-                    <i class="fa-solid fa-user-tie"></i>
+                    <i className="fa-solid fa-user-tie"></i>
                     <h2>Service Client 7j/7</h2>
                 </div>
             </div>

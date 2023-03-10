@@ -1,5 +1,6 @@
 import React from 'react'
-import Copyright from '../Components/Copyright'
+import Copyright from './Copyright'
+import '../views/Style.css'
 
 export default function Footer() {
 

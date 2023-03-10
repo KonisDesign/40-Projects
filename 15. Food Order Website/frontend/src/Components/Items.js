@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Data } from '../data/data'
+import { Data } from '../data/Data'
 import SortItems from './SortItems'
 
 export default function Items() {
