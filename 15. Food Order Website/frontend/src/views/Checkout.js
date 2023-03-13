@@ -1,6 +1,25 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { CartData } from '../data/CartData'
+import { Data } from '../data/Data'
+import './Style.css'
 
 export default function Checkout() {
+
+    const navigate = useNavigate();
+
+    const total = () => {
+
+        let i = 0
+
+        CartData.map((item) => (
+            i += item.NBR * Data.find((item2) => item2.ID === item.ID).Price
+        ))
+
+        i += 3.50
+
+        return i
+    }
 
     return (
         <div className='cart-container'>
@@ -24,14 +43,9 @@ export default function Checkout() {
                     </div>
                     <p>Company name (optional)</p>
                     <input type='text'/>
-                    <p>Country</p>
-                    <select>
-                        <option>France</option>
-                        <option>Belgium</option>
-                        <option>United Kingdom</option>
-                    </select>
                     <p>Street address</p>
                     <input type='text'/>
+                    <p>More infos</p>
                     <input type='text'/>
                     <p>Town / City</p>
                     <input type='text'/>
@@ -45,7 +59,26 @@ export default function Checkout() {
                     <textarea rows='6'/>
                 </div>
                 <div className='bill'>
-
+                    <h1>Your order</h1>
+                    <div className='row'>
+                        <h3>Product</h3>
+                        <h3>Subtotal</h3>
+                    </div>
+                    {CartData.map((item, index) => (
+                        <div className='row' key={index}>
+                            <p>{Data.find((item2) => item2.ID === item.ID).Name} x {item.NBR}</p>
+                            <p>{(item.NBR * Data.find((item2) => item2.ID === item.ID).Price).toFixed(2)}€</p>
+                        </div>
+                    ))}
+                    <div className='row'>
+                        <h3>Shipping</h3>
+                        <p>3.50€</p>
+                    </div>
+                    <div className='row'>
+                        <h3>Total</h3>
+                        <h3>{(total()).toFixed(2)}€</h3>
+                    </div>
+                    <button className='primary-button' onClick={() => navigate('/complete')}>Place order</button>
                 </div>
             </div>
         </div>

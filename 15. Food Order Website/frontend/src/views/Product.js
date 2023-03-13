@@ -20,11 +20,14 @@ export default function Product() {
           });
         }
       
-        console.log(CartData);
+        document.getElementById('notif').style.display = "block"
       };
 
   return (
     <div className='product-container'>
+      <div className='notification' id='notif'>
+        <h3><b>{Data[id].Name}</b> added <i className="fa-solid fa-bag-shopping"></i></h3>
+      </div>
         <button className='close-button' onClick={() => navigate('/meal')}>X</button>
         <div className='top-container'>
             <div className='column'>

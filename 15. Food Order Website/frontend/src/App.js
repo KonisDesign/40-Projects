@@ -5,6 +5,7 @@ import './App.css';
 import Product from "./views/Product";
 import Cart from "./views/Cart";
 import Checkout from "./views/Checkout";
+import Complete from "./views/Complete";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/meal/:id" element={<><Product /></>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/complete" element={<Complete />} />
         </Routes>
       </BrowserRouter>
     </>

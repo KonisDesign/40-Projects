@@ -317,6 +317,20 @@ header .row .bronze {
 .product-container .infos p {
   color: #7F7F7F;
 }
+.product-container .notification {
+  width: 240px;
+  height: auto;
+  background-color: #93826E;
+  position: absolute;
+  top: 15px;
+  display: none;
+  -webkit-animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+  animation: slide-out-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) 1s both;
+}
+.product-container .notification h3 {
+  width: 100%;
+  text-align: center;
+}
 
 .cart-container {
   width: 70%;
@@ -394,10 +408,13 @@ header .row .bronze {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: nowrap;
 }
 .cart-container .checkout .contact-infos {
   width: 40%;
   height: auto;
+  padding: 15px;
+  border: 1px solid transparent;
   display: flex;
   flex-direction: column;
 }
@@ -420,7 +437,38 @@ header .row .bronze {
   width: 40%;
 }
 .cart-container .checkout .contact-infos input {
-  width: calc(100% - 12px);
+  width: calc(100% - 22px);
+}
+.cart-container .checkout .bill {
+  width: 50%;
+  height: auto;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.cart-container .checkout .bill h1 {
+  width: 100%;
+  color: #93826E;
+  font-weight: 300;
+}
+.cart-container .checkout .bill .row {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart-container .checkout .bill button {
+  margin-top: 15px;
+  font-size: 18px;
+}
+.cart-container .fa-face-smile-beam {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: green;
 }
 
 footer {
@@ -531,6 +579,30 @@ footer .column .row i:hover {
     transform: rotateX(0);
     opacity: 1;
     display: block;
+  }
+}
+@-webkit-keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
   }
 }
 
