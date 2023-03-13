@@ -70,6 +70,12 @@ header {
         color: #fff;
         font-family: 'Pacifico', cursive;
         font-size: 80px;
+
+        @media all and (max-width: 834px) {
+            width: 100%;
+            font-size: 60px;
+            top: 40px;
+        }
     }
 
     button {
@@ -77,6 +83,10 @@ header {
         left: calc(50% - 100px);
         position: absolute;
         box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+        @media all and (max-width: 834px) {
+            display: none;
+        }
     }
 
     .services-container {
@@ -87,10 +97,21 @@ header {
         justify-content: space-between;
         align-items: flex-start;
 
+        @media all and (max-width: 834px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .column {
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            @media all and (max-width: 834px) {
+                flex-direction: row;
+                justify-content: center;
+                gap: 15px;
+            }
 
             i {
                 color: $bronze;
@@ -132,12 +153,21 @@ header {
         align-items: center;
         flex-wrap: nowrap;
 
+        @media all and (max-width: 834px) {
+            flex-direction: column-reverse;
+        }
+
         .compo {
             width: 50%;
             height: auto;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+            @media all and (max-width: 834px) {
+                width: 100%;
+                align-items: center;
+            }
 
             h3 {
                 font-size: 18px;
@@ -181,7 +211,7 @@ header {
         }
 
         img {
-            width: 50%;
+            width: 80%;
             height: auto;
         }
     }
@@ -225,6 +255,11 @@ header {
     flex-wrap: wrap;
     gap: 10%;
 
+    @media all and (max-width: 428px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .item {
         width: calc(70% / 4);
         min-width: 180px;
@@ -235,6 +270,15 @@ header {
         align-items: center;
         cursor: pointer;
         text-align: center;
+
+        @media all and (max-width: 834px) {
+            width: calc(80% / 3);
+            padding-bottom: 10px;
+        }
+
+        @media all and (max-width: 428px) {
+            width: 90%;
+        }
 
         button {
             display: none;
@@ -254,6 +298,10 @@ header {
             width: 100%;
             height: 150px;
             object-fit: contain;
+
+            @media all and (max-width: 428px) {
+                height: 300px;
+            }
         }
 
         .row {
@@ -275,6 +323,10 @@ header {
     align-items: center;
     position: relative;
 
+    @media all and (max-width: 428px) {
+        padding-bottom: 50px;
+    }
+
     .top-container {
         width: 100%;
         height: auto;
@@ -282,6 +334,12 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media all and (max-width: 428px) {
+            margin-top: 60px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
 
         .column {
             width: auto;
@@ -315,10 +373,18 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        @media all and (max-width: 428px) {
+            flex-direction: column;
+        }
+
         img {
             width: 50%;
             height: 400px;
             object-fit: contain;
+
+            @media all and (max-width: 428px) {
+                height: 150px;
+            }
         }
 
         .column {
@@ -327,6 +393,10 @@ header {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+
+            @media all and (max-width: 428px) {
+                width: 90%;
+            }
 
             .row {
                 width: 100%;
@@ -379,6 +449,13 @@ header {
         -webkit-animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
         animation: slide-out-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 1s both;
 
+        @media all and (max-width: 428px) {
+            top: auto;
+            bottom: 0px;
+            -webkit-animation: fade-out 1s ease-out .8s both;
+            animation: fade-out 1s ease-out .8s both;
+        }
+
         h3 {
             width: 100%;
             text-align: center;
@@ -396,6 +473,11 @@ header {
     align-items: center;
     position: relative;
 
+    @media all and (max-width: 428px) {
+            width: 90%;
+            padding: 0px 5%;
+    }
+
     .head {
         width: 100%;
         height: auto;
@@ -406,6 +488,10 @@ header {
 
         h1 {
             font-weight: 300;
+
+            @media all and (max-width: 428px) {
+            font-size: 20px;
+            }
         }
     }
 
@@ -460,6 +546,12 @@ header {
                 display: flex;
                 align-items: center;
 
+                @media all and (max-width: 428px) {
+            width: auto;
+            padding: 10px 15px;
+            justify-content: center;
+                }
+
                 i {
                     margin: 8px;
                 }
@@ -483,6 +575,10 @@ header {
         align-items: flex-start;
         flex-wrap: nowrap;
 
+        @media all and (max-width: 428px) {
+            flex-direction: column;
+        }
+
         .contact-infos {
             width: 40%;
             height: auto;
@@ -490,6 +586,10 @@ header {
             border: 1px solid transparent;
             display: flex;
             flex-direction: column;
+
+            @media all and (max-width: 428px) {
+            width: calc(100% - 30px);
+            }
 
             h1 {
                 color: $bronze;
@@ -526,6 +626,10 @@ header {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            @media all and (max-width: 428px) {
+            width: calc(100% - 60px);
+            margin-left: 15px;
+            }
 
             h1 {
                 width: 100%;
@@ -564,6 +668,10 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     background-color: #000;
+
+    @media all and (max-width: 834px) {
+        flex-direction: column;
+    }
 
     .column {
         width: auto;
@@ -684,28 +792,50 @@ footer {
     }
 }
 
- @-webkit-keyframes slide-out-top {
+@-webkit-keyframes slide-out-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
     }
-  }
-  @keyframes slide-out-top {
+}
+
+@keyframes slide-out-top {
     0% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
     }
-  }
-  
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
