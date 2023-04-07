@@ -332,6 +332,12 @@ main .items .active:hover {
 .container .stack-list .firebase i {
   color: #ffca28;
 }
+.container .stack-list .react {
+  background-color: #202329;
+}
+.container .stack-list .reactrouter {
+  background-color: #CA4245;
+}
 .container .last {
   margin-bottom: 40px;
 }
