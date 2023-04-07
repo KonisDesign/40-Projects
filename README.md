@@ -11,6 +11,7 @@
 [11. Tic Tac Toe](https://konisdesign.github.io/40-Projects/11.%20Tic%20Tac%20Toe/) <br/>
 [13. Portfolio Website](https://konisdesign.github.io/40-Projects/13.%20Portfolio%20Website/) <br/>
 [15. Food Order Website](https://github.com/KonisDesign/40-Projects/tree/main/15.%20Food%20Order%20Website) <br/>
+[24. Netflix Clone](https://github.com/KonisDesign/Netflix) (React, Sass, Node Express) <br/>
 [38. To-Do List App](https://github.com/KonisDesign/40-Projects/tree/main/38.%20To-Do%20List%20App/frontend) (React, Sass)
 
 
